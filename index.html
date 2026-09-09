@@ -1,0 +1,736 @@
+<!doctype html>
+
+<html class="light" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GOTAMS — Lait et Yaourt de Soja Frais à Yaoundé, Cameroun</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#002203",
+              "on-error": "#ffffff",
+              error: "#ba1a1a",
+              "secondary-fixed": "#a3f69c",
+              "inverse-surface": "#313030",
+              "tertiary-fixed": "#ffdbcf",
+              "on-secondary-container": "#217128",
+              "surface-dim": "#dcd9d9",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#acf4a4",
+              "error-container": "#ffdad6",
+              primary: "#00450d",
+              "surface-container-low": "#f6f3f2",
+              "secondary-container": "#a0f399",
+              "on-secondary-fixed-variant": "#005312",
+              "inverse-on-surface": "#f3f0ef",
+              "surface-bright": "#fcf9f8",
+              "on-background": "#1c1b1b",
+              "on-surface": "#1c1b1b",
+              "surface-tint": "#2a6b2c",
+              "surface-container-highest": "#e5e2e1",
+              "outline-variant": "#c0c9bb",
+              "surface-variant": "#e5e2e1",
+              "on-primary-fixed-variant": "#0c5216",
+              tertiary: "#6c2200",
+              "on-tertiary-fixed-variant": "#802a00",
+              "surface-container-high": "#eae7e7",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#ffb59a",
+              outline: "#717a6d",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#41493e",
+              background: "#fcf9f8",
+              surface: "#fcf9f8",
+              "tertiary-container": "#933100",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed": "#380d00",
+              "primary-container": "#1b5e20",
+              "surface-container": "#f0eded",
+              "on-tertiary-container": "#ffb498",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#91d78a",
+              "inverse-primary": "#91d78a",
+              "on-primary-container": "#90d689",
+              "on-secondary-fixed": "#002204",
+              secondary: "#1b6d24",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              base: "8px",
+              "stack-md": "24px",
+              "margin-mobile": "16px",
+              "container-max": "1200px",
+              "stack-lg": "48px",
+              "margin-desktop": "40px",
+              "stack-sm": "12px",
+              gutter: "24px",
+            },
+            fontFamily: {
+              "label-md": ["DM Sans"],
+              "headline-lg": ["Playfair Display"],
+              "headline-xl": ["Playfair Display"],
+              "accent-text": ["DM Sans"],
+              "headline-md": ["Playfair Display"],
+              "body-lg": ["DM Sans"],
+              "headline-lg-mobile": ["Playfair Display"],
+              "body-md": ["DM Sans"],
+            },
+            fontSize: {
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+              "headline-xl": [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "accent-text": ["16px", { lineHeight: "1.5", fontWeight: "500" }],
+              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "1.3", fontWeight: "700" },
+              ],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/global.css" />
+<link rel="stylesheet" href="accueil/accueil.css" />
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-[72px]"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-md hidden md:flex"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center w-full"
+      >
+        <a class="flex items-center gap-2" href="#">
+          <img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-14 w-auto">
+        </a>
+        <div class="flex items-center gap-6 font-label-md text-label-md">
+          <a
+            class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+            href="index.html"
+            >Accueil</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+            href="pages/nos-produits/nos-produits.html"
+            >Produits</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+          href="pages/notre-histoire/notre-histoire.html"
+            >Notre Histoire</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+           href="pages/notre-processus/notre-processus.html"
+            >Notre Processus</a
+          >
+          <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform" href="pages/agro-premium-organic/agro-premium-organic.html">Agro-Premium Organic</a>
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+            href="pages/satisfaction/satisfaction.html"
+            >Satisfaction</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-[#E65100] text-white px-6 py-2 rounded-full font-label-md text-label-md hover:bg-[#F57C00] transition-colors"
+          >
+            Commander maintenant
+          </button>
+          <span
+            class="material-symbols-outlined text-primary"
+            data-icon="eco"
+            data-weight="fill"
+            >eco</span
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile TopNavBar (Simplified for small screens) -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-md flex md:hidden px-margin-mobile py-4 justify-between items-center"
+    >
+      <a class="flex items-center gap-2" href="#">
+<img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-12 w-auto">
+</a>
+      </a>
+      <button class="text-primary">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+      </button>
+    </nav>
+    <main class="flex-grow">
+      <!-- Section 1 - Hero -->
+      <section
+        class="relative bg-gradient-to-br from-[#1B5E20] to-[#2E7D32] text-white overflow-hidden py-24 md:py-32 px-margin-mobile md:px-margin-desktop"
+      >
+        <div
+          class="absolute inset-0 opacity-[0.08]"
+          style="
+            background-image: url(&quot;data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.83-54.627 54.627-.83-.83zM29.627 0l.83.83-29.627 29.627-.83-.83z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E&quot;);
+          "
+        ></div>
+        <div
+          class="max-w-container-max mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center"
+        >
+          <div class="flex flex-col items-start gap-stack-sm">
+            <span
+              class="inline-block bg-[#F1F8E9]/20 text-white px-4 py-1.5 rounded-full font-label-md text-label-md backdrop-blur-sm border border-white/20"
+            >
+              🌱 100% Local · 100% Végétal · 100% Cameroun
+            </span>
+            <h1
+              class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-white"
+            >
+              Nourrir le Cameroun, un pot de soja à la fois.
+            </h1>
+            <p class="font-body-lg text-body-lg text-[#C8E6C9] max-w-lg mt-4">
+              Découvrez l'excellence végétale avec nos produits à base de soja,
+              conçus pour allier tradition agricole et raffinement moderne.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a
+                class="bg-[#E65100] text-white px-8 py-3 rounded-full font-label-md text-label-md hover:bg-[#F57C00] transition-colors shadow-lg hover:shadow-xl"
+                href="#"
+              >
+                Découvrir nos produits
+              </a>
+              <a
+                class="border-2 border-white text-white px-8 py-3 rounded-full font-label-md text-label-md hover:bg-white hover:text-[#1B5E20] transition-colors"
+                href="#"
+              >
+                Notre histoire
+              </a>
+            </div>
+          </div>
+          <div
+            class="hidden lg:block relative h-96 rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              data-alt="A lush, modern still-life arrangement featuring a glass bottle of fresh soy milk and a bowl of creamy soy yogurt on a clean, light wood table."
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuADl4BWl1Mns7MrtdlJ8kE-IAqpPQh_ytR822HAzZTzzFqMP4aBr97jetfKkPCxqZiNtgB6_RI7eiqyoQc0jreYbt101CpO8brD4S481KTLEeC-TyL8eEd7sFNd1GzqZLaUanpTLKYzDsYH8Ihj6G59HRiPRyH-IrjXD5fgof2iFwy75zfvGLphAhqJGvIeQLrm6seBIpVBRaSuYiFaUIDA7gbgrAeZI1PhBey2ari_cO6kmIu3mDlr&quot;);
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 - Stats Bar -->
+      <section
+        class="bg-[#E8F5E9] py-stack-md px-margin-mobile md:px-margin-desktop border-b border-[#C8E6C9]"
+      >
+        <div
+          class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter text-center divide-x-0 md:divide-x-2 divide-[#C8E6C9]"
+        >
+          <div class="flex flex-col items-center gap-2 py-2">
+            <span
+              class="font-headline-lg text-headline-lg text-[#1B5E20] font-bold"
+              >92%</span
+            >
+            <span class="font-label-md text-label-md text-[#555555]"
+              >Intolérance au lactose (estimé)</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 py-2">
+            <span
+              class="font-headline-lg text-headline-lg text-[#1B5E20] font-bold"
+              >-50%</span
+            >
+            <span class="font-label-md text-label-md text-[#555555]"
+              >Plus économique</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 py-2 mt-4 md:mt-0">
+            <span
+              class="font-headline-lg text-headline-lg text-[#1B5E20] font-bold"
+              >0</span
+            >
+            <span class="font-label-md text-label-md text-[#555555]"
+              >Gaspillage (Okara valorisé)</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 py-2 mt-4 md:mt-0">
+            <span
+              class="font-headline-lg text-headline-lg text-[#1B5E20] font-bold"
+              >J+1</span
+            >
+            <span class="font-label-md text-label-md text-[#555555]"
+              >Livraison fraîcheur max</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 - Products -->
+      <section
+        class="bg-white py-16 md:py-24 px-margin-mobile md:px-margin-desktop"
+      >
+        <div class="max-w-container-max mx-auto">
+          <h2
+            class="font-headline-lg text-headline-lg text-center text-[#1B5E20] mb-12"
+          >
+            Ce que nous fabriquons
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div
+              class="rounded-2xl overflow-hidden border border-[#E0E0E0] shadow-md hover:shadow-lg transition-shadow bg-white flex flex-col"
+            >
+              <div
+                class="bg-[#F1F8E9] h-48 w-full flex items-center justify-center p-6"
+              >
+                <span class="material-symbols-outlined text-6xl text-[#2E7D32]"
+                  >water_drop</span
+                >
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <h3
+                  class="font-headline-md text-headline-md text-[#1B5E20] mb-2"
+                >
+                  Lait de Soja
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-[#555555] mb-4 flex-grow"
+                >
+                  Saveurs : Nature, Vanille, Cacao, Gingembre.
+                </p>
+                <div
+                  class="font-label-md text-label-md font-bold text-[#E65100]"
+                >
+                  500 - 1000 FCFA
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div
+              class="rounded-2xl overflow-hidden border border-[#E0E0E0] shadow-md hover:shadow-lg transition-shadow bg-white flex flex-col relative"
+            >
+              <span
+                class="absolute top-4 right-4 bg-[#E65100] text-white text-xs font-bold px-3 py-1 rounded-full z-10"
+                >Nouveau ✨</span
+              >
+              <div
+                class="bg-[#F1F8E9] h-48 w-full flex items-center justify-center p-6"
+              >
+                <span class="material-symbols-outlined text-6xl text-[#2E7D32]"
+                  >icecream</span
+                >
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <h3
+                  class="font-headline-md text-headline-md text-[#1B5E20] mb-2"
+                >
+                  Yaourt de Soja
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-[#555555] mb-4 flex-grow"
+                >
+                  Saveurs : Fraise, Ananas, Mangue, Bissap, Gingembre.
+                </p>
+                <div
+                  class="font-label-md text-label-md font-bold text-[#E65100]"
+                >
+                  300 - 600 FCFA
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div
+              class="rounded-2xl overflow-hidden border border-[#E0E0E0] shadow-md hover:shadow-lg transition-shadow bg-white flex flex-col"
+            >
+              <div
+                class="bg-[#F1F8E9] h-48 w-full flex items-center justify-center p-6"
+              >
+                <span class="material-symbols-outlined text-6xl text-[#2E7D32]"
+                  >agriculture</span
+                >
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <h3
+                  class="font-headline-md text-headline-md text-[#1B5E20] mb-2"
+                >
+                  Okara
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-[#555555] mb-4 flex-grow"
+                >
+                  Alimentation nutritive pour l'élevage. Zéro déchet.
+                </p>
+                <div
+                  class="font-label-md text-label-md font-bold text-[#E65100]"
+                >
+                  100 - 250 FCFA
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 - Mission -->
+      <section
+        class="bg-[#F1F8E9] py-16 md:py-24 px-margin-mobile md:px-margin-desktop"
+      >
+        <div
+          class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        >
+          <div
+            class="relative h-[400px] rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1 bg-[#2E7D32] flex items-center justify-center"
+          >
+            <!-- Placeholder for field/production image -->
+            <span class="material-symbols-outlined text-8xl text-white/50"
+              >spa</span
+            >
+          </div>
+          <div class="order-1 lg:order-2 flex flex-col gap-6">
+            <h2 class="font-headline-lg text-headline-lg text-[#1B5E20]">
+              Transformer le soja local en opportunité
+            </h2>
+            <p class="font-body-lg text-body-lg text-[#555555]">
+              Nous croyons en un Cameroun plus fort, nourri par ses propres
+              terres. Notre mission dépasse la simple production de lait et de
+              yaourt : nous construisons une filière durable qui valorise le
+              travail local tout en offrant des alternatives saines et
+              accessibles.
+            </p>
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#2E7D32]"
+                  >check_circle</span
+                >
+                <span
+                  class="font-body-md text-body-md text-[#333333] font-medium"
+                  >Production 100% locale</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#2E7D32]"
+                  >check_circle</span
+                >
+                <span
+                  class="font-body-md text-body-md text-[#333333] font-medium"
+                  >Sans conservateurs artificiels</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#2E7D32]"
+                  >check_circle</span
+                >
+                <span
+                  class="font-body-md text-body-md text-[#333333] font-medium"
+                  >Démarche Zéro déchet</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#2E7D32]"
+                  >check_circle</span
+                >
+                <span
+                  class="font-body-md text-body-md text-[#333333] font-medium"
+                  >Entreprise créée par des femmes</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section 5 - Testimonials -->
+      <section
+        class="bg-white py-16 md:py-24 px-margin-mobile md:px-margin-desktop"
+      >
+        <div class="max-w-container-max mx-auto">
+          <h2
+            class="font-headline-lg text-headline-lg text-center text-[#1B5E20] mb-12"
+          >
+            Ce que disent nos clients
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-surface-container-low p-8 rounded-2xl border border-surface-variant"
+            >
+              <div class="flex gap-1 text-[#FFB300] mb-4">
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-[#555555] italic mb-6">
+                "Le yaourt à la mangue est exceptionnel. On sent vraiment le
+                goût du fruit naturel et ça me rassure pour mes enfants."
+              </p>
+              <p class="font-label-md text-label-md font-bold text-[#1B5E20]">
+                — Amina K.
+              </p>
+            </div>
+            <div
+              class="bg-surface-container-low p-8 rounded-2xl border border-surface-variant"
+            >
+              <div class="flex gap-1 text-[#FFB300] mb-4">
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-[#555555] italic mb-6">
+                "Étant intolérant au lactose, j'ai enfin trouvé une alternative
+                abordable et produite chez nous au Cameroun."
+              </p>
+              <p class="font-label-md text-label-md font-bold text-[#1B5E20]">
+                — Paul M.
+              </p>
+            </div>
+            <div
+              class="bg-surface-container-low p-8 rounded-2xl border border-surface-variant"
+            >
+              <div class="flex gap-1 text-[#FFB300] mb-4">
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="star"
+                  data-weight="fill"
+                  >star</span
+                >
+              </div>
+              <p class="font-body-md text-body-md text-[#555555] italic mb-6">
+                "La livraison est toujours ponctuelle et les produits arrivent
+                bien frais. Le lait au gingembre est mon préféré pour le
+                petit-déjeuner."
+              </p>
+              <p class="font-label-md text-label-md font-bold text-[#1B5E20]">
+                — Christelle N.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 6 - Newsletter & CTA -->
+      <section
+        class="bg-[#1B5E20] py-16 px-margin-mobile md:px-margin-desktop text-center"
+      >
+        <div class="max-w-2xl mx-auto flex flex-col items-center gap-6">
+          <h2 class="font-headline-lg text-headline-lg text-white">
+            Rejoignez la famille GOTAMS
+          </h2>
+          <p class="font-body-lg text-body-lg text-[#C8E6C9] mb-4">
+            Recevez nos nouveautés, offres spéciales et passez vos commandes
+            directement via WhatsApp.
+          </p>
+          <form
+            class="flex flex-col sm:flex-row gap-3 w-full max-w-md mx-auto mb-6"
+          >
+            <input
+              class="flex-grow px-4 py-3 rounded-full border-none focus:ring-2 focus:ring-[#E65100] text-black font-body-md"
+              placeholder="Votre Email ou Numéro WhatsApp"
+              type="text"
+            />
+            <button
+              class="bg-[#E65100] text-white px-6 py-3 rounded-full font-label-md text-label-md hover:bg-[#F57C00] transition-colors whitespace-nowrap"
+              type="submit"
+            >
+              S'inscrire
+            </button>
+          </form>
+          <div class="flex items-center gap-4 w-full max-w-md mx-auto">
+            <div class="h-px bg-white/30 flex-grow"></div>
+            <span class="text-white/60 font-label-md">OU</span>
+            <div class="h-px bg-white/30 flex-grow"></div>
+          </div>
+          <a
+            class="mt-4 bg-white text-[#1B5E20] px-8 py-4 rounded-full font-label-md text-label-md font-bold hover:bg-gray-100 transition-colors shadow-lg flex items-center gap-2 text-lg"
+            href="#"
+          >
+            <span class="material-symbols-outlined">forum</span>
+            💬 Rejoindre notre groupe WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-low dark:bg-surface-container-lowest w-full pt-stack-lg pb-stack-md px-margin-mobile md:px-margin-desktop border-t border-surface-variant"
+    >
+      <div
+        class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter mb-stack-md"
+      >
+        <div class="col-span-1 md:col-span-2">
+          <h3
+            class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4"
+          >
+            GOTAMS SARL
+          </h3>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant mb-4 max-w-sm"
+          >
+            Excellence in Plant-Based Dairy. Nourishing Cameroon with premium,
+            locally sourced soy products.
+          </p>
+          <div class="flex items-center gap-2 text-on-surface-variant">
+            <span class="material-symbols-outlined" data-icon="location_on"
+              >location_on</span
+            >
+            <span class="font-body-md text-body-md">Soa, Cameroon</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-accent-text text-accent-text text-primary mb-4">
+            Liens Rapides
+          </h4>
+          <ul
+            class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"
+          >
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Produits</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Notre Histoire</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Notre Processus</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-accent-text text-accent-text text-primary mb-4">
+            Support
+          </h4>
+          <ul
+            class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant"
+          >
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-primary transition-colors" href="#"
+                >WhatsApp Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="max-w-[1200px] mx-auto pt-4 border-t border-outline-variant/30 text-center text-on-surface-variant font-label-md text-label-md"
+      >
+        © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
+      </div>
+    </footer>
+  </body>
+</html>

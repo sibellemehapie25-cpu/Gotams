@@ -1,0 +1,19 @@
+.material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 1,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .premium-shadow {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      }
+      .premium-shadow-hover:hover {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        transform: translateY(-4px);
+        transition: all 0.3s ease;
+      }
+      .leaf-edge {
+        border-left: 4px solid #2e7d32;
+        padding-left: 24px;
+      }

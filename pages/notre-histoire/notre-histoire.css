@@ -1,0 +1,17 @@
+ /* Smooth scrolling and custom utilities */
+      html {
+        scroll-behavior: smooth;
+      }
+      .leaf-edge {
+        border-left: 4px solid #2e7d32; /* Primary Mid Green accent */
+        padding-left: 24px;
+      }
+      .premium-shadow {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      }
+      .premium-shadow:hover {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      }
+      .bg-light-green {
+        background-color: #f1f8e9; /* Level 1 Surface */
+      }

@@ -1,0 +1,677 @@
+<!doctype html>
+
+<html class="light" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Commander - GOTAMS SARL</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#002203",
+              "on-error": "#ffffff",
+              error: "#ba1a1a",
+              "secondary-fixed": "#a3f69c",
+              "inverse-surface": "#313030",
+              "tertiary-fixed": "#ffdbcf",
+              "on-secondary-container": "#217128",
+              "surface-dim": "#dcd9d9",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#acf4a4",
+              "error-container": "#ffdad6",
+              primary: "#00450d",
+              "surface-container-low": "#f6f3f2",
+              "secondary-container": "#a0f399",
+              "on-secondary-fixed-variant": "#005312",
+              "inverse-on-surface": "#f3f0ef",
+              "surface-bright": "#fcf9f8",
+              "on-background": "#1c1b1b",
+              "on-surface": "#1c1b1b",
+              "surface-tint": "#2a6b2c",
+              "surface-container-highest": "#e5e2e1",
+              "outline-variant": "#c0c9bb",
+              "surface-variant": "#e5e2e1",
+              "on-primary-fixed-variant": "#0c5216",
+              tertiary: "#6c2200",
+              "on-tertiary-fixed-variant": "#802a00",
+              "surface-container-high": "#eae7e7",
+              "secondary-fixed-dim": "#88d982",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#ffb59a",
+              outline: "#717a6d",
+              "on-primary": "#ffffff",
+              "on-surface-variant": "#41493e",
+              background: "#fcf9f8",
+              surface: "#fcf9f8",
+              "tertiary-container": "#933100",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed": "#380d00",
+              "primary-container": "#1b5e20",
+              "surface-container": "#f0eded",
+              "on-tertiary-container": "#ffb498",
+              "on-secondary": "#ffffff",
+              "primary-fixed-dim": "#91d78a",
+              "inverse-primary": "#91d78a",
+              "on-primary-container": "#90d689",
+              "on-secondary-fixed": "#002204",
+              secondary: "#1b6d24",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              base: "8px",
+              "stack-md": "24px",
+              "margin-mobile": "16px",
+              "container-max": "1200px",
+              "stack-lg": "48px",
+              "margin-desktop": "40px",
+              "stack-sm": "12px",
+              gutter: "24px",
+            },
+            fontFamily: {
+              "label-md": ["DM Sans"],
+              "headline-lg": ["Playfair Display"],
+              "headline-xl": ["Playfair Display"],
+              "accent-text": ["DM Sans"],
+              "headline-md": ["Playfair Display"],
+              "body-lg": ["DM Sans"],
+              "headline-lg-mobile": ["Playfair Display"],
+              "body-md": ["DM Sans"],
+            },
+            fontSize: {
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
+              "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
+              "headline-xl": [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "accent-text": ["16px", { lineHeight: "1.5", fontWeight: "500" }],
+              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "1.3", fontWeight: "700" },
+              ],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="commander.css" />
+  </head>
+  <body
+    class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-[88px]"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-md bg-surface dark:bg-surface-dim shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="../../assets/images/logo/logo.png"
+            alt="GOTAM'S - Produire sain, Nourrir mieux"
+            class="h-14 w-auto"
+          />
+        </div>
+        <div class="hidden md:flex items-center gap-gutter">
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../../index.html"
+            >Accueil</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../nos-produits/nos-produits.html"
+            >Produits</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../notre-histoire/notre-histoire.html"
+            >Notre Histoire</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../notre-processus/notre-processus.html"
+            >Notre Processus</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../agro-premium-organic/agro-premium-organic.html"
+            >Agro-Premium Organic</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all p-2 rounded-lg"
+            href="../satisfaction/satisfaction.html"
+            >Satisfaction</a
+          >
+          <a
+            class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md scale-95 duration-150 transition-transform"
+            href="#"
+            >Commander maintenant</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section
+        class="bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop text-center"
+      >
+        <div
+          class="max-w-[800px] mx-auto leaf-edge text-left md:text-center md:border-l-0 md:pl-0"
+        >
+          <h1
+            class="font-headline-xl text-headline-xl text-primary mb-stack-md hidden md:block"
+          >
+            Commander vos produits GOTAMS
+          </h1>
+          <h1
+            class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-md md:hidden"
+          >
+            Commander vos produits GOTAMS
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Profitez de nos délices végétaux. Livraison disponible sur Yaoundé
+            et ses environs.
+          </p>
+        </div>
+      </section>
+      <!-- Main Content: Two Columns -->
+      <section
+        class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-stack-md md:gap-gutter"
+        >
+          <!-- Left Column: Order Form -->
+          <div
+            class="md:col-span-7 bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] p-[24px] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300"
+          >
+            <h2
+              class="font-headline-md text-headline-md text-primary mb-stack-md"
+            >
+              Formulaire de Commande
+            </h2>
+            <form class="space-y-stack-md">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+                <div>
+                  <label
+                    class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                    >Nom Complet</label
+                  >
+                  <input
+                    class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                    placeholder="Votre nom"
+                    type="text"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                    >Numéro WhatsApp</label
+                  >
+                  <input
+                    class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                    placeholder="+237 ..."
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                  >Zone de Livraison (Yaoundé)</label
+                >
+                <select
+                  class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                >
+                  <option>Sélectionnez une zone</option>
+                  <option>Centre Ville</option>
+                  <option>Bastos</option>
+                  <option>Omnisports</option>
+                  <option>Biyem-Assi</option>
+                  <option>Autre (préciser en note)</option>
+                </select>
+              </div>
+              <div
+                class="p-stack-sm bg-[#F1F8E9] rounded-lg border border-[#F1F8E9]"
+              >
+                <h3
+                  class="font-accent-text text-accent-text text-primary-container mb-stack-sm"
+                >
+                  Produits Sélectionnés
+                </h3>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-3 gap-stack-sm items-end"
+                >
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                      >Produit</label
+                    >
+                    <select
+                      class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                    >
+                      <option>Lait Végétal</option>
+                      <option>Yaourt Végétal</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                      >Saveur</label
+                    >
+                    <select
+                      class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                    >
+                      <option>Nature</option>
+                      <option>Vanille</option>
+                      <option>Chocolat</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-on-surface-variant mb-2"
+                      >Quantité</label
+                    >
+                    <input
+                      class="w-full bg-[#FAFDF6] border-[#F1F8E9] focus:border-[#2E7D32] focus:ring-[#2E7D32] rounded-lg font-body-md text-body-md text-on-surface"
+                      min="1"
+                      type="number"
+                      value="1"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="mt-4 text-primary-container font-label-md text-label-md flex items-center gap-2 hover:underline"
+                  type="button"
+                >
+                  <span class="material-symbols-outlined" data-icon="add_circle"
+                    >add_circle</span
+                  >
+                  Ajouter un produit
+                </button>
+              </div>
+              <button
+                class="w-full bg-[#E65100] text-white font-label-md text-label-md py-3 px-6 rounded-[16px] hover:bg-opacity-90 transition-colors flex items-center justify-center gap-2"
+                type="button"
+              >
+                <span class="material-symbols-outlined" data-icon="send"
+                  >send</span
+                >
+                Commander via WhatsApp Direct
+              </button>
+            </form>
+          </div>
+          <!-- Right Column: Info & Contact -->
+          <div class="md:col-span-5 space-y-stack-md">
+            <!-- Delivery Info Card -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] p-[24px] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-shadow duration-300"
+            >
+              <div class="flex items-center gap-4 mb-stack-md">
+                <div
+                  class="w-12 h-12 bg-[#F1F8E9] rounded-full flex items-center justify-center text-primary-container"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="local_shipping"
+                    >local_shipping</span
+                  >
+                </div>
+                <h3 class="font-headline-md text-headline-md text-primary">
+                  Infos Livraison
+                </h3>
+              </div>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#2E7D32]"
+                    data-icon="eco"
+                    >eco</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >Livraison quotidienne sur Yaoundé.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#2E7D32]"
+                    data-icon="eco"
+                    >eco</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >Commandes passées avant 12h livrées le jour même.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-[#2E7D32]"
+                    data-icon="eco"
+                    >eco</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >Frais de livraison calculés selon la zone.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Contact Card -->
+            <div class="bg-[#F1F8E9] rounded-[16px] p-[24px] leaf-edge">
+              <h3
+                class="font-headline-md text-headline-md text-primary-container mb-stack-md"
+              >
+                Contact &amp; Localisation
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-primary-container"
+                    data-icon="location_on"
+                    >location_on</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >Soa, Mefou et Afamba, Cameroun</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-primary-container"
+                    data-icon="phone"
+                    >phone</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >+237 6XX XX XX XX</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <span
+                    class="material-symbols-outlined text-primary-container"
+                    data-icon="mail"
+                    >mail</span
+                  >
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >contact@gotams.cm</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section
+        class="bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop"
+      >
+        <div class="max-w-[800px] mx-auto">
+          <h2
+            class="font-headline-xl text-headline-xl text-primary mb-stack-lg text-center hidden md:block"
+          >
+            Questions Fréquentes
+          </h2>
+          <h2
+            class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-stack-lg text-center md:hidden"
+          >
+            Questions Fréquentes
+          </h2>
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+            >
+              <button
+                class="w-full px-[24px] py-[16px] flex justify-between items-center bg-transparent focus:outline-none text-left"
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="font-accent-text text-accent-text text-primary"
+                  >Quelle est la durée de conservation des produits ?</span
+                >
+                <span
+                  class="material-symbols-outlined text-outline"
+                  data-icon="expand_more"
+                  >expand_more</span
+                >
+              </button>
+              <div class="px-[24px] pb-[16px] hidden">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Nos laits et yaourts végétaux se conservent généralement entre
+                  7 et 10 jours au réfrigérateur. Veuillez vérifier la date
+                  limite de consommation sur l'emballage.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+            >
+              <button
+                class="w-full px-[24px] py-[16px] flex justify-between items-center bg-transparent focus:outline-none text-left"
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="font-accent-text text-accent-text text-primary"
+                  >Comment se passe la livraison à Yaoundé ?</span
+                >
+                <span
+                  class="material-symbols-outlined text-outline"
+                  data-icon="expand_more"
+                  >expand_more</span
+                >
+              </button>
+              <div class="px-[24px] pb-[16px] hidden">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Nous livrons via des coursiers partenaires. Vous serez
+                  contacté sur WhatsApp pour convenir d'une heure de passage une
+                  fois la commande validée.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+            >
+              <button
+                class="w-full px-[24px] py-[16px] flex justify-between items-center bg-transparent focus:outline-none text-left"
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="font-accent-text text-accent-text text-primary"
+                  >Quels sont les moyens de paiement acceptés ?</span
+                >
+                <span
+                  class="material-symbols-outlined text-outline"
+                  data-icon="expand_more"
+                  >expand_more</span
+                >
+              </button>
+              <div class="px-[24px] pb-[16px] hidden">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Nous acceptons les paiements via Mobile Money (Orange/MTN) à
+                  la commande, ou en espèces à la livraison pour certaines
+                  zones.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+            >
+              <button
+                class="w-full px-[24px] py-[16px] flex justify-between items-center bg-transparent focus:outline-none text-left"
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="font-accent-text text-accent-text text-primary"
+                  >Vos produits sont-ils certifiés ?</span
+                >
+                <span
+                  class="material-symbols-outlined text-outline"
+                  data-icon="expand_more"
+                  >expand_more</span
+                >
+              </button>
+              <div class="px-[24px] pb-[16px] hidden">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Oui, nos procédés de fabrication respectent les normes
+                  d'hygiène et de sécurité alimentaire en vigueur au Cameroun,
+                  garantissant une qualité premium.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div
+              class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_24px_rgba(0,0,0,0.08)] overflow-hidden"
+            >
+              <button
+                class="w-full px-[24px] py-[16px] flex justify-between items-center bg-transparent focus:outline-none text-left"
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="font-accent-text text-accent-text text-primary"
+                  >Proposez-vous des tarifs pour professionnels ?</span
+                >
+                <span
+                  class="material-symbols-outlined text-outline"
+                  data-icon="expand_more"
+                  >expand_more</span
+                >
+              </button>
+              <div class="px-[24px] pb-[16px] hidden">
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Oui, nous travaillons avec des restaurants, cafés et
+                  supermarchés. Contactez-nous directement pour discuter de nos
+                  offres B2B.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SideNavBar (FAB for WhatsApp) -->
+    <div
+      class="fixed bottom-8 right-8 z-50 flex items-center justify-center rounded-full bg-tertiary text-on-tertiary p-4 w-16 h-16 shadow-xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:scale-110 transition-transform duration-300 cursor-pointer"
+    >
+      <span class="material-symbols-outlined" data-icon="chat">chat</span>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="w-full pt-stack-lg pb-stack-md bg-surface-container-low dark:bg-surface-container-lowest text-primary dark:text-primary-fixed bg-surface-container-low dark:bg-on-surface-variant/5"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter"
+      >
+        <div class="mb-stack-md md:mb-0">
+          <div
+            class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4"
+          >
+            GOTAMS SARL
+          </div>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-outline"
+          >
+            Excellence in Plant-Based Dairy.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-accent-text text-accent-text mb-4">Navigation</h4>
+          <ul class="space-y-2 font-body-md text-body-md">
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >Produits</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >Notre Histoire</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >Notre Processus</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-accent-text text-accent-text mb-4">Contact</h4>
+          <ul class="space-y-2 font-body-md text-body-md">
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >Soa, Cameroon</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
+                href="#"
+                >WhatsApp Support</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-accent-text text-accent-text mb-4">Légal</h4>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant dark:text-outline"
+          >
+            © 2024 GOTAMS SARL.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
