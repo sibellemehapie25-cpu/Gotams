@@ -126,7 +126,7 @@
       };
     </script>
     <link rel="stylesheet" href="assets/css/global.css" />
-<link rel="stylesheet" href="accueil/accueil.css" />
+    <link rel="stylesheet" href="accueil/accueil.css" />
   </head>
   <body
     class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col pt-[72px]"
@@ -139,7 +139,11 @@
         class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center w-full"
       >
         <a class="flex items-center gap-2" href="#">
-          <img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-14 w-auto">
+          <img
+            src="accueil/images/logo.png"
+            alt="GOTAM'S - Produire sain, Nourrir mieux"
+            class="h-14 w-auto"
+          />
         </a>
         <div class="flex items-center gap-6 font-label-md text-label-md">
           <a
@@ -154,15 +158,19 @@
           >
           <a
             class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
-          href="pages/notre-histoire/notre-histoire.html"
+            href="pages/notre-histoire/notre-histoire.html"
             >Notre Histoire</a
           >
           <a
             class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
-           href="pages/notre-processus/notre-processus.html"
+            href="pages/notre-processus/notre-processus.html"
             >Notre Processus</a
           >
-          <a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform" href="pages/agro-premium-organic/agro-premium-organic.html">Agro-Premium Organic</a>
+          <a
+            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
+            href="pages/agro-premium-organic/agro-premium-organic.html"
+            >Agro-Premium Organic</a
+          >
           <a
             class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all active:scale-95 duration-150 transition-transform"
             href="pages/satisfaction/satisfaction.html"
@@ -183,25 +191,54 @@
           >
         </div>
       </div>
-     <!-- Mobile TopNavBar (Simplified for small screens) -->
+    </nav>
+    <!-- Mobile TopNavBar (Simplified for small screens) -->
     <nav
       class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-md flex flex-col md:hidden px-margin-mobile py-4"
     >
       <div class="flex justify-between items-center">
         <a class="flex items-center gap-2" href="index.html">
-          <img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-12 w-auto">
+          <img
+            src="accueil/images/logo.png"
+            alt="GOTAM'S - Produire sain, Nourrir mieux"
+            class="h-12 w-auto"
+          />
         </a>
         <button class="text-primary" id="mobileMenuBtn">
           <span class="material-symbols-outlined" data-icon="menu">menu</span>
         </button>
       </div>
       <div class="hidden flex-col gap-2 pt-4" id="mobileMenu">
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html">Accueil</a>
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/nos-produits/nos-produits.html">Produits</a>
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/notre-histoire/notre-histoire.html">Notre Histoire</a>
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/notre-processus/notre-processus.html">Notre Processus</a>
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/agro-premium-organic/agro-premium-organic.html">Agro-Premium Organic</a>
-        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/satisfaction/satisfaction.html">Satisfaction</a>
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="index.html"
+          >Accueil</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="pages/nos-produits/nos-produits.html"
+          >Produits</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="pages/notre-histoire/notre-histoire.html"
+          >Notre Histoire</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="pages/notre-processus/notre-processus.html"
+          >Notre Processus</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="pages/agro-premium-organic/agro-premium-organic.html"
+          >Agro-Premium Organic</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="pages/satisfaction/satisfaction.html"
+          >Satisfaction</a
+        >
       </div>
     </nav>
     <main class="flex-grow">
