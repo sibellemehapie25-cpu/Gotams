@@ -94,13 +94,30 @@
               "body-md": ["DM Sans"],
             },
             fontSize: {
-              "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "500" }],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.05em",
+                  fontWeight: "500",
+                },
+              ],
               "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
-              "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+              "headline-xl": [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
               "accent-text": ["16px", { lineHeight: "1.5", fontWeight: "500" }],
               "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
               "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-              "headline-lg-mobile": ["28px", { lineHeight: "1.3", fontWeight: "700" }],
+              "headline-lg-mobile": [
+                "28px",
+                { lineHeight: "1.3", fontWeight: "700" },
+              ],
               "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
             },
           },
@@ -112,88 +129,214 @@
   </head>
   <body class="bg-background text-on-background font-body-md antialiased pt-24">
     <!-- TopNavBar -->
-    <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)] shadow-md">
-      <div class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center">
-        <a class="flex items-center gap-2 hover:scale-95 duration-150 transition-transform" href="../../index.html">
-          <img src="../../assets/images/logo/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-14 w-auto" />
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)] shadow-md"
+    >
+      <div
+        class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center"
+      >
+        <a
+          class="flex items-center gap-2 hover:scale-95 duration-150 transition-transform"
+          href="../../index.html"
+        >
+          <img
+            src="../../assets/images/logo/logo.png"
+            alt="GOTAM'S - Produire sain, Nourrir mieux"
+            class="h-14 w-auto"
+          />
         </a>
         <nav class="hidden md:flex gap-8">
-          <a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="../../index.html">Accueil</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="../nos-produits/nos-produits.html">Produits</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="../notre-processus/notre-processus.html">Notre Processus</a>
-          <a class="text-primary font-bold border-b-2 border-primary pb-1 hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="#">Agro-Premium Organic</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg" href="../satisfaction/satisfaction.html">Satisfaction</a>
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="../../index.html"
+            >Accueil</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="../nos-produits/nos-produits.html"
+            >Produits</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="../notre-histoire/notre-histoire.html"
+            >Notre Histoire</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="../notre-processus/notre-processus.html"
+            >Notre Processus</a
+          >
+          <a
+            class="text-primary font-bold border-b-2 border-primary pb-1 hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="#"
+            >Agro-Premium Organic</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
+            href="../satisfaction/satisfaction.html"
+            >Satisfaction</a
+          >
         </nav>
-        <button class="hidden md:flex items-center gap-2 bg-[#E65100] text-white px-6 py-3 rounded-[16px] font-label-md text-label-md hover:opacity-90 transition-opacity">
+        <button
+          class="hidden md:flex items-center gap-2 bg-[#E65100] text-white px-6 py-3 rounded-[16px] font-label-md text-label-md hover:opacity-90 transition-opacity"
+        >
           Commander maintenant
         </button>
-        <button class="md:hidden text-primary p-2">
+        <button class="md:hidden text-primary p-2" id="mobileMenuBtn">
           <span class="material-symbols-outlined">menu</span>
         </button>
+      </div>
+      <div
+        class="hidden md:hidden flex-col gap-2 px-margin-mobile pb-4"
+        id="mobileMenu"
+      >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="../../index.html"
+          >Accueil</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="../nos-produits/nos-produits.html"
+          >Produits</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="../notre-histoire/notre-histoire.html"
+          >Notre Histoire</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="../notre-processus/notre-processus.html"
+          >Notre Processus</a
+        >
+        <a
+          class="font-label-md text-label-md text-primary font-bold py-2"
+          href="#"
+          >Agro-Premium Organic</a
+        >
+        <a
+          class="font-label-md text-label-md text-on-surface-variant py-2"
+          href="../satisfaction/satisfaction.html"
+          >Satisfaction</a
+        >
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="w-full max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop pb-stack-lg">
+    <main
+      class="w-full max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop pb-stack-lg"
+    >
       <header class="text-center mb-stack-lg mt-stack-md">
-        <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary-container mb-4">
+        <h1
+          class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary-container mb-4"
+        >
           Agro-Premium Organic
         </h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-          Là où l'agriculture traditionnelle camerounaise rencontre l'exigence du haut de gamme biologique.
+        <p
+          class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+        >
+          Là où l'agriculture traditionnelle camerounaise rencontre l'exigence
+          du haut de gamme biologique.
         </p>
       </header>
 
       <section class="leaf-edge mb-stack-lg">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Notre engagement premium</h2>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">
+          Notre engagement premium
+        </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Chez GOTAM'S, "premium" ne veut pas dire importé ni artificiel. Cela signifie un contrôle
-          rigoureux à chaque étape : sélection des graines de soja, culture sans intrants chimiques,
-          transformation dans le respect des nutriments naturels. C'est notre façon de prouver qu'une
-          production locale, camerounaise, peut atteindre les standards les plus exigeants.
+          Chez GOTAM'S, "premium" ne veut pas dire importé ni artificiel. Cela
+          signifie un contrôle rigoureux à chaque étape : sélection des graines
+          de soja, culture sans intrants chimiques, transformation dans le
+          respect des nutriments naturels. C'est notre façon de prouver qu'une
+          production locale, camerounaise, peut atteindre les standards les plus
+          exigeants.
         </p>
       </section>
 
       <section class="leaf-edge mb-stack-lg">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Une agriculture biologique enracinée</h2>
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">
+          Une agriculture biologique enracinée
+        </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Nos partenaires producteurs cultivent le soja selon des méthodes agro-écologiques : rotation
-          des cultures, absence de pesticides de synthèse, et respect des sols. Cette approche garantit
-          des graines plus riches, une meilleure traçabilité, et un impact environnemental réduit.
+          Nos partenaires producteurs cultivent le soja selon des méthodes
+          agro-écologiques : rotation des cultures, absence de pesticides de
+          synthèse, et respect des sols. Cette approche garantit des graines
+          plus riches, une meilleure traçabilité, et un impact environnemental
+          réduit.
         </p>
       </section>
 
-      <section class="leaf-edge mb-stack-lg premium-shadow bg-white rounded-[16px] p-6 md:p-10">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Produire sain, nourrir mieux</h2>
+      <section
+        class="leaf-edge mb-stack-lg premium-shadow bg-white rounded-[16px] p-6 md:p-10"
+      >
+        <h2 class="font-headline-md text-headline-md text-primary mb-2">
+          Produire sain, nourrir mieux
+        </h2>
         <p class="font-body-md text-body-md text-on-surface-variant">
-          Cette exigence se retrouve dans chacun de nos produits : le lait de soja et le yaourt de soja
-          GOTAM'S sont pensés pour offrir une alternative saine, accessible et savoureuse, sans compromis
-          sur la qualité nutritionnelle.
+          Cette exigence se retrouve dans chacun de nos produits : le lait de
+          soja et le yaourt de soja GOTAM'S sont pensés pour offrir une
+          alternative saine, accessible et savoureuse, sans compromis sur la
+          qualité nutritionnelle.
         </p>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full pt-stack-lg pb-stack-md bg-surface-container-low shadow-none flat max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+    <footer
+      class="w-full pt-stack-lg pb-stack-md bg-surface-container-low shadow-none flat max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter"
+    >
       <div class="col-span-1 md:col-span-1 flex flex-col gap-4">
-        <span class="font-headline-md text-headline-md text-primary">GOTAMS SARL</span>
-        <p class="font-body-md text-body-md text-on-surface-variant">© 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.</p>
+        <span class="font-headline-md text-headline-md text-primary"
+          >GOTAMS SARL</span
+        >
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
+        </p>
       </div>
-      <div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div
+        class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-4"
+      >
         <div class="flex flex-col gap-2">
-          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../nos-produits/nos-produits.html">Produits</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+            href="../nos-produits/nos-produits.html"
+            >Produits</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+            href="../notre-histoire/notre-histoire.html"
+            >Notre Histoire</a
+          >
         </div>
         <div class="flex flex-col gap-2">
-          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="../notre-processus/notre-processus.html">Notre Processus</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Contact</a>
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+            href="../notre-processus/notre-processus.html"
+            >Notre Processus</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
+            href="#"
+            >Contact</a
+          >
         </div>
         <div class="flex flex-col gap-2">
-          <span class="text-on-surface-variant font-body-md text-body-md flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Soa, Cameroon</span>
-          <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md flex items-center gap-1" href="#"><span class="material-symbols-outlined text-sm">chat</span> WhatsApp Support</a>
+          <span
+            class="text-on-surface-variant font-body-md text-body-md flex items-center gap-1"
+            ><span class="material-symbols-outlined text-sm">location_on</span>
+            Soa, Cameroon</span
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md flex items-center gap-1"
+            href="#"
+            ><span class="material-symbols-outlined text-sm">chat</span>
+            WhatsApp Support</a
+          >
         </div>
       </div>
     </footer>
+    <script src="../../assets/js/global.js"></script>
   </body>
 </html>

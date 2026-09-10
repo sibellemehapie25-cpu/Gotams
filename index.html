@@ -183,18 +183,26 @@
           >
         </div>
       </div>
-    </nav>
-    <!-- Mobile TopNavBar (Simplified for small screens) -->
+     <!-- Mobile TopNavBar (Simplified for small screens) -->
     <nav
-      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-md flex md:hidden px-margin-mobile py-4 justify-between items-center"
+      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-md flex flex-col md:hidden px-margin-mobile py-4"
     >
-      <a class="flex items-center gap-2" href="#">
-<img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-12 w-auto">
-</a>
-      </a>
-      <button class="text-primary">
-        <span class="material-symbols-outlined" data-icon="menu">menu</span>
-      </button>
+      <div class="flex justify-between items-center">
+        <a class="flex items-center gap-2" href="index.html">
+          <img src="accueil/images/logo.png" alt="GOTAM'S - Produire sain, Nourrir mieux" class="h-12 w-auto">
+        </a>
+        <button class="text-primary" id="mobileMenuBtn">
+          <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+      </div>
+      <div class="hidden flex-col gap-2 pt-4" id="mobileMenu">
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="index.html">Accueil</a>
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/nos-produits/nos-produits.html">Produits</a>
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/notre-histoire/notre-histoire.html">Notre Histoire</a>
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/notre-processus/notre-processus.html">Notre Processus</a>
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/agro-premium-organic/agro-premium-organic.html">Agro-Premium Organic</a>
+        <a class="font-label-md text-label-md text-on-surface-variant py-2" href="pages/satisfaction/satisfaction.html">Satisfaction</a>
+      </div>
     </nav>
     <main class="flex-grow">
       <!-- Section 1 - Hero -->
@@ -732,5 +740,6 @@
         © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
       </div>
     </footer>
+    <script src="assets/js/global.js"></script>
   </body>
 </html>
