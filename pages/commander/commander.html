@@ -74,67 +74,32 @@
             <form
               class="card"
               style="padding: 1.2rem; margin-bottom: 1rem"
-              data-add-product="lait"
+              data-add-product="boisson"
             >
-              <h3>Lait de soja</h3>
-              <p class="price">500 – 1000 FCFA</p>
+              <h3>Lait &amp; Yaourt de soja</h3>
               <div class="field">
-                <label for="lait-flavor">Saveur</label>
-                <select class="select" id="lait-flavor" name="flavor">
-                  <option>Nature</option>
-                  <option>Vanille</option>
-                  <option>Cacao</option>
-                  <option>Gingembre</option>
+                <label for="boisson-produit">Produit</label>
+                <select class="select" id="boisson-produit" name="produit">
+                  <option value="lait">Lait de soja</option>
+                  <option value="yaourt">Yaourt de soja</option>
                 </select>
               </div>
+              <p class="price" id="boisson-price">500 – 1000 FCFA</p>
               <div class="field">
-                <label for="lait-format">Format</label>
-                <select class="select" id="lait-format" name="format">
-                  <option>0,5 L</option>
-                  <option>1 L</option>
-                </select>
+                <label for="boisson-flavor" id="boisson-flavor-label"
+                  >Saveur</label
+                >
+                <select class="select" id="boisson-flavor" name="flavor"></select>
               </div>
               <div class="field">
-                <label for="lait-qty">Quantité</label>
+                <label for="boisson-format">Format</label>
+                <select class="select" id="boisson-format" name="format"></select>
+              </div>
+              <div class="field">
+                <label for="boisson-qty">Quantité</label>
                 <input
                   class="input"
-                  id="lait-qty"
-                  name="qty"
-                  type="number"
-                  min="1"
-                  value="1"
-                />
-              </div>
-              <button class="btn btn-primary" type="submit">Ajouter</button>
-            </form>
-            <form
-              class="card"
-              style="padding: 1.2rem; margin-bottom: 1rem"
-              data-add-product="yaourt"
-            >
-              <h3>Yaourt de soja</h3>
-              <p class="price">300 – 600 FCFA</p>
-              <div class="field">
-                <label for="yaourt-flavor">Parfum</label>
-                <select class="select" id="yaourt-flavor" name="flavor">
-                  <option>Fraise</option>
-                  <option>Ananas</option>
-                  <option>Mangue</option>
-                  <option>Bissap</option>
-                  <option>Gingembre</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="yaourt-format">Format</label>
-                <select class="select" id="yaourt-format" name="format">
-                  <option>0,5 L</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="yaourt-qty">Quantité</label>
-                <input
-                  class="input"
-                  id="yaourt-qty"
+                  id="boisson-qty"
                   name="qty"
                   type="number"
                   min="1"
@@ -193,6 +158,16 @@
                   name="whatsapp"
                   placeholder="+237 …"
                   required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Adresse e-mail (optionnel)</label
+                ><input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="vous@exemple.com"
                 />
               </div>
               <div class="field">

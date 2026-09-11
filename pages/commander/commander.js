@@ -1,6 +1,17 @@
 ﻿(function () {
   var KEY = "gotams.cart.v1";
   var WHATSAPP = "237699232344";
+  var SHEET_URL =
+    "https://script.google.com/macros/s/AKfycbx1vLZD8jgXMYLV29o4JBMB8jgZagSdjtQCSIRGLlky93DPHu2i8fAXQBVJO3RXPcEZ/exec";
+
+  function uid() {
+    return (
+      "cmd_" +
+      Date.now().toString(36) +
+      "_" +
+      Math.random().toString(36).slice(2, 8)
+    );
+  }
 
   var CATALOG = {
     lait: {
@@ -106,13 +117,42 @@
     return lines.join("\n");
   }
 
+  function populateBoisson() {
+    var form = document.querySelector('[data-add-product="boisson"]');
+    if (!form) return;
+    var id = form.produit.value;
+    var product = CATALOG[id];
+    if (!product) return;
+    form.flavor.innerHTML = product.flavors
+      .map(function (f) { return "<option>" + f + "</option>"; })
+      .join("");
+    form.format.innerHTML = product.formats
+      .map(function (f) { return "<option>" + f + "</option>"; })
+      .join("");
+    var priceEl = document.getElementById("boisson-price");
+    if (priceEl) {
+      priceEl.textContent = id === "lait" ? "500 – 1000 FCFA" : "300 – 600 FCFA";
+    }
+    var flavorLabel = document.getElementById("boisson-flavor-label");
+    if (flavorLabel) {
+      flavorLabel.textContent = id === "lait" ? "Saveur" : "Parfum";
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     render();
+    populateBoisson();
+
+    var boissonProduit = document.getElementById("boisson-produit");
+    if (boissonProduit) {
+      boissonProduit.addEventListener("change", populateBoisson);
+    }
 
     document.querySelectorAll("[data-add-product]").forEach(function (form) {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var id = form.getAttribute("data-add-product");
+        if (id === "boisson") id = form.produit.value;
         var product = CATALOG[id];
         if (!product) return;
         addItem({
@@ -137,7 +177,8 @@
     if (orderForm) {
       orderForm.addEventListener("submit", function (e) {
         e.preventDefault();
-        if (!loadCart().length) {
+        var cart = loadCart();
+        if (!cart.length) {
           if (window.GotamsUI) window.GotamsUI.toast("Ajoutez au moins un produit.");
           return;
         }
@@ -145,6 +186,27 @@
           if (window.GotamsUI) window.GotamsUI.toast("Indiquez votre nom et votre WhatsApp.");
           return;
         }
+
+        try {
+          fetch(SHEET_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({
+              id: uid(),
+              type: "order",
+              nom: orderForm.nom.value.trim(),
+              whatsapp: orderForm.whatsapp.value.trim(),
+              email: orderForm.email ? orderForm.email.value.trim() : "",
+              zone: orderForm.zone.value,
+              note: orderForm.note.value,
+              items: cart
+            })
+          });
+        } catch (err) {
+          /* pas de connexion : on continue quand même vers WhatsApp */
+        }
+
         var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(messageFromCart(orderForm));
         window.open(url, "_blank", "noopener");
       });
