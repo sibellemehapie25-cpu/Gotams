@@ -1,0 +1,352 @@
+================================================================================
+GOTAMS_Fiche_Terrain_01_Menages_V3.docx
+================================================================================
+GOTAMS — ENQUÊTE MÉNAGES
+Lait & yaourt végétaux à base de soja | Zones ciblées Soa + Yaoundé | 2026
+Date / Enquêteur(trice)···························
+Zone / Quartier / N° fiche···························
+Script enquêteur : “Bonjour ! Je représente GOTAMS, une entreprise de Soa qui produit du lait et du yaourt à base de soja, des produits végétaux locaux. Puis-je vous poser quelques questions pendant environ 5 minutes ? Vos réponses sont anonymes.”
+A — PROFIL
+Sexe
+□ M
+□ F
+Âge
+□ < 25 ans
+□ 25–45 ans
+□ 45+ ans
+Localité
+□ Soa / Nkolfoulou
+□ Éleveur / Fougerole
+□ Ngousso
+Situation
+□ Ménagère
+□ Salarié(e)
+□ Étudiant(e)
+□ Autre : __________
+B — CONSOMMATION ACTUELLE
+Q1. Consommez-vous du lait régulièrement ?
+□ Oui, tous les jours
+□ Oui, parfois
+□ Non → passer à Q4
+Q2. Quel type de lait achetez-vous ?
+□ Lait en poudre importé (Nido, Peak…)
+□ Lait frais de vache (informel)
+□ Lait de soja (déjà)
+□ Autre : __________________
+Q3. Avez-vous des gênes digestives avec le lait de vache ?
+□ Oui, souvent (ballonnements, diarrhées…)
+□ Parfois
+□ Non
+Q4. Taille du foyer
+□ 1–2 personnes
+□ 3–5 personnes
+□ 6+ personnes
+C — PRIX PAYÉ ACTUELLEMENT
+Q5. À combien achetez-vous habituellement le lait et/ou le yaourt que vous consommez ?
+Produit / marque consommé(e)
+Format / volume habituel
+Prix payé (FCFA)
+Lait : ________________________
+________________________
+________________
+Yaourt : _____________________
+________________________
+________________
+Noter le prix réellement payé aujourd’hui, avant de demander le prix jugé acceptable pour un produit GOTAMS.
+D — INTÉRÊT POUR LES PRODUITS GOTAMS
+Q6. Avez-vous déjà consommé du lait de soja ?
+□ Oui, régulièrement
+□ J’ai déjà essayé
+□ Non, jamais
+Q7. Seriez-vous prêt(e) à acheter du lait / yaourt de soja local ?
+□ Oui, certainement
+□ Oui, si le prix est correct
+□ Peut-être
+□ Non
+E — DÉGUSTATION (si échantillons disponibles)
+Produit dégusté
+Goût (1=mauvais → 5=excellent)
+Texture (1–5)
+Achèterait ?
+Commentaire
+Lait de soja
+□1  □2  □3  □4  □5
+□1  □2  □3  □4  □5
+□ Oui  □ Non
+Yaourt de soja
+□1  □2  □3  □4  □5
+□1  □2  □3  □4  □5
+□ Oui  □ Non
+GOTAMS — ENQUÊTE MÉNAGES
+Prix acceptable & canal d’achat | suite de la fiche
+F — PRIX ACCEPTABLE
+Q8. Lait de soja — bouteille 0,5 L
+□ < 250 FCFA
+□ 250–350 FCFA
+□ 350–500 FCFA
+□ > 500 FCFA
+□ N’achèterait pas
+Q9. Lait de soja — bouteille 1 L
+□ < 500 FCFA
+□ 500–700 FCFA
+□ 700–1 000 FCFA
+□ > 1 000 FCFA
+□ N’achèterait pas
+Q10. Yaourt de soja — bouteille 0,5 L
+□ < 300 FCFA
+□ 300–500 FCFA
+□ 500–600 FCFA
+□ > 600 FCFA
+□ N’achèterait pas
+G — CANAL D’ACHAT & SUIVI
+Q11. Où préféreriez-vous acheter les produits GOTAMS ?
+□ Boutique de quartier
+□ Marché
+□ Livraison / commande WhatsApp
+□ Supermarché
+□ Autre : __________________
+Contact, uniquement si la personne accepte d’être recontactée
+Nom : __________________________________
+Téléphone / WhatsApp : ____________________
+Accord de suivi : □ Oui  □ Non
+Les produits GOTAMS présentés dans cette enquête sont des produits végétaux à base de soja.
+
+================================================================================
+GOTAMS_Fiche_Terrain_02_Commercants_V3.docx
+================================================================================
+GOTAMS — ENQUÊTE COMMERÇANTS
+Boutiques · Cantines · Restaurants · autres points de vente | Produits végétaux à base de soja | 2026
+Date / Enquêteur(trice)···························
+Zone / Quartier / N° fiche···························
+Nom établissement
+Type
+Responsable rencontré
+Contact
+Script enquêteur : “Bonjour ! Je représente GOTAMS, une entreprise de Soa qui produit du lait et du yaourt à base de soja, des produits végétaux locaux. Je souhaite savoir si un partenariat d’approvisionnement pourrait vous intéresser. Cela prendra environ 5 minutes.”
+A — TYPE D’ÉTABLISSEMENT
+Sélectionner le type
+□ Boutique / Épicerie
+□ Supermarché
+□ Restaurant / Maquis
+□ Cantine scolaire
+□ Hôtel / Auberge
+□ Pharmacie
+□ Boulangerie
+□ Autre : __________________
+B — SITUATION ACTUELLE
+Q1. Vendez / utilisez-vous du lait ou du yaourt actuellement ?
+□ Oui, lait → préciser : _____________
+□ Oui, yaourt → préciser : ____________
+□ Non → passer à Q4
+Q2. Quel type de produit laitier utilisez-vous ?
+□ Lait en poudre importé
+□ Lait UHT brique
+□ Lait frais local
+□ Yaourt industriel
+□ Autre : __________________
+Q3. Pour les produits achetés / utilisés actuellement, renseignez les informations suivantes :
+Nom du produit / marque
+Quantité achetée / semaine
+Prix payé par litre (FCFA)
+Fournisseur
+C — INTÉRÊT POUR LES PRODUITS GOTAMS
+Q4. Intérêt pour du lait / yaourt de soja local GOTAMS
+□ Oui, très intéressé(e)
+□ Oui, si prix compétitif
+□ Oui, après présentation / test ultérieur
+□ Non
+Q5. Volume hebdomadaire souhaité si disponible
+Lait de soja : __________ L / sem
+Yaourt de soja : ______ unités / sem
+Fréquence : □ Hebdo  □ 2×/sem  □ À la commande
+D — CONDITIONS COMMERCIALES
+Q6. Prix d’achat acceptable — lait 1 L
+□ < 400 FCFA
+□ 400–600 FCFA
+□ 600–800 FCFA
+□ Autre : __________ FCFA
+Q7. Prix d’achat acceptable — yaourt / unité
+□ < 200 FCFA
+□ 200–350 FCFA
+□ 350–500 FCFA
+□ Autre : __________ FCFA
+Q8. Mode de livraison préféré
+□ Livraison par GOTAMS
+□ Enlèvement à Soa
+□ Les deux
+□ Autre : __________________
+E — DÉGUSTATION (si échantillons disponibles)
+Produit dégusté
+Goût (1→5)
+Texture (1→5)
+Achèterait pour revendre ?
+Remarque
+Lait de soja
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+□ Oui  □ Non  □ À tester davantage
+Yaourt de soja
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+□ Oui  □ Non  □ À tester davantage
+GOTAMS — INTENTION D’APPROVISIONNEMENT
+À compléter uniquement si le professionnel manifeste un intérêt
+LETTRE D’INTENTION — NON ENGAGEANTE
+Je soussigné(e) ________________________________________________, représentant(e) de ________________________________________________, situé(e) à ______________________________________, confirme mon intérêt pour un approvisionnement en produits GOTAMS dès leur disponibilité.
+Volume estimé — lait / semaine
+Volume estimé — yaourt / semaine
+Mode de livraison envisagé
+____________ L
+____________ unités
+□ Livraison GOTAMS□ Enlèvement à Soa□ Les deux
+Nom du signataire : ________________________________     Signature : ________________________________
+Date : ____ / ____ / 2026
+* Cette lettre exprime uniquement un intérêt. Elle ne constitue ni une commande ferme, ni un engagement contractuel ou financier.
+Les produits GOTAMS visés sont des produits végétaux à base de soja.
+
+================================================================================
+GOTAMS_Fiche_Terrain_03_Releve_Prix_Concurrence_V3.docx
+================================================================================
+GOTAMS — RELEVÉ PRIX CONCURRENCE
+Lait · yaourt · alternatives végétales | Soa + Yaoundé | 2026
+Date···························
+Zone / Marché / Boutique visitée···························
+Enquêteur(trice)···························
+SECTION 1 — RELEVÉ LAIT (TOUTES FORMES)
+Marque / Produit
+Type
+Conditionnement
+Prix constaté
+Prix ramené au litre
+Point de vente
+Nido (Nestlé)
+Poudre importée
+400 g / 900 g / 2,5 kg
+Peak (FrieslandCampina)
+Poudre importée
+400 g / 900 g
+Candia / Lactel (UHT)
+UHT brique
+500 ml / 1 L
+Lait frais vache (informel)
+Frais local
+Au litre / bidon
+Lait soja artisanal local
+Soja / végétal
+Sachet / bouteille
+Autre : __________________
+____________
+____________
+Autre : __________________
+____________
+____________
+SECTION 2 — RELEVÉ YAOURT
+Marque / Produit
+Type
+Conditionnement
+Prix constaté
+Prix ramené / 100 g
+Point de vente
+Camlait Yaourt
+Yaourt lait vache
+125 g / 250 g
+Yaourt artisanal local
+Lait vache frais
+Pot / sachet
+Yaourt importé (Activia…)
+Yaourt industriel
+125 g / 500 g
+Autre : __________________
+____________
+____________
+Autre : __________________
+____________
+____________
+DÉGUSTATION (si échantillons disponibles)
+Produit dégusté / marque
+Type
+Goût (1→5)
+Texture (1→5)
+Appréciation / remarque
+Lait / boisson de soja
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+Yaourt
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+OBSERVATIONS TERRAIN
+Produit dominant dans cette zone
+Produit le moins cher — lait
+Produit le moins cher — yaourt
+Remarques libres (manque, opportunité, produit absent, alternative végétale repérée…) :
+..............................................................................................................................................................................................
+
+================================================================================
+GOTAMS_Fiche_Terrain_04_Synthese_Journee_V3.docx
+================================================================================
+GOTAMS — SYNTHÈSE JOURNÉE TERRAIN
+Usage interne — 1 fiche par journée et par enquêteur(trice) | Produits végétaux à base de soja
+Date···························
+Zone couverte···························
+Enquêteur(trice)···························
+OBJECTIFS DE LA JOURNÉE
+Ménages
+Commerces / professionnels
+Autres actions terrain
+Objectif : 20Réalisé : ______
+Objectif : 20Réalisé : ______
+Objectif : 10Réalisé : ______Nature : __________________
+SUIVI DES ACTIONS COMPLÉMENTAIRES
+Action
+Réalisé
+Observations rapides
+Relevés concurrence effectués
+Lettres d’intention signées
+Contacts prioritaires notés
+PRIX ACCEPTABLES LES PLUS CITÉS — MÉNAGES
+Produit
+Fourchette la plus citée
+Réaction générale
+Lait de soja — 0,5 L
+□ < 250 F (nbre:___ )   □ 250–350 F(nbre:___ )□ 350–500 F(nbre:___ )   □ > 500 F(nbre:___ )
+□ Enthousiaste   □ Neutre   □ Réticent
+Lait de soja — 1 L
+□ < 500 F (nbre:___ )    □ 500–700 F (nbre:___ )□ 700–1 000 F (nbre:___ )    □ > 1 000 F (nbre:___ )
+□ Enthousiaste   □ Neutre   □ Réticent
+Yaourt de soja
+□ < 300 F (nbre:___ )    □ 300–500 F (nbre:___ )□ 500–600 F (nbre:___ )    □ > 500 F(nbre:___ )
+□ Enthousiaste   □ Neutre   □ Réticent
+DÉGUSTATION (si échantillons disponibles)
+Produit
+Nb dégustations
+Goût dominant (1→5)
+Texture dominante (1→5)
+Intention d’achat / revente
+Lait de soja
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+□ Oui   □ Non
+Yaourt de soja
+□1 □2 □3 □4 □5
+□1 □2 □3 □4 □5
+□ Oui   □ Non
+PRINCIPALES OBJECTIONS & RETOUR POSITIF DOMINANT
+Objection la plus fréquente
+□ « Je ne connais pas le soja »
+□ « C’est trop cher »
+□ « Je ne fais pas confiance à la qualité »
+□ « Goût / produit inhabituel »
+□ Autre : __________________
+Retour positif dominant
+□ Intérêt pour un produit végétal local
+□ Prix jugé acceptable
+□ Très bon accueil après dégustation
+□ Demande de disponibilité / suivi
+□ Autre : __________________
+CONTACTS PRIORITAIRES À RECONTACTER
+Nom / Établissement
+Type
+Contact
+Intérêt exprimé
+Signature : ____________________________________________     Heure de fin : ______________
+

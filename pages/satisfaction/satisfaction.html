@@ -1,681 +1,154 @@
-<!doctype html>
-
-<html class="light" lang="fr">
+﻿<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>GOTAMS SARL - Fiche de Dégustation</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satisfaction — GOTAM’S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-primary-fixed": "#002203",
-              "on-error": "#ffffff",
-              error: "#ba1a1a",
-              "secondary-fixed": "#a3f69c",
-              "inverse-surface": "#313030",
-              "tertiary-fixed": "#ffdbcf",
-              "on-secondary-container": "#217128",
-              "surface-dim": "#dcd9d9",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#acf4a4",
-              "error-container": "#ffdad6",
-              primary: "#00450d",
-              "surface-container-low": "#f6f3f2",
-              "secondary-container": "#a0f399",
-              "on-secondary-fixed-variant": "#005312",
-              "inverse-on-surface": "#f3f0ef",
-              "surface-bright": "#fcf9f8",
-              "on-background": "#1c1b1b",
-              "on-surface": "#1c1b1b",
-              "surface-tint": "#2a6b2c",
-              "surface-container-highest": "#e5e2e1",
-              "outline-variant": "#c0c9bb",
-              "surface-variant": "#e5e2e1",
-              "on-primary-fixed-variant": "#0c5216",
-              tertiary: "#6c2200",
-              "on-tertiary-fixed-variant": "#802a00",
-              "surface-container-high": "#eae7e7",
-              "secondary-fixed-dim": "#88d982",
-              "surface-container-lowest": "#ffffff",
-              "tertiary-fixed-dim": "#ffb59a",
-              outline: "#717a6d",
-              "on-primary": "#ffffff",
-              "on-surface-variant": "#41493e",
-              background: "#fcf9f8",
-              surface: "#fcf9f8",
-              "tertiary-container": "#933100",
-              "on-error-container": "#93000a",
-              "on-tertiary-fixed": "#380d00",
-              "primary-container": "#1b5e20",
-              "surface-container": "#f0eded",
-              "on-tertiary-container": "#ffb498",
-              "on-secondary": "#ffffff",
-              "primary-fixed-dim": "#91d78a",
-              "inverse-primary": "#91d78a",
-              "on-primary-container": "#90d689",
-              "on-secondary-fixed": "#002204",
-              secondary: "#1b6d24",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              base: "8px",
-              "stack-md": "24px",
-              "margin-mobile": "16px",
-              "container-max": "1200px",
-              "stack-lg": "48px",
-              "margin-desktop": "40px",
-              "stack-sm": "12px",
-              gutter: "24px",
-            },
-            fontFamily: {
-              "label-md": ["DM Sans"],
-              "headline-lg": ["Playfair Display"],
-              "headline-xl": ["Playfair Display"],
-              "accent-text": ["DM Sans"],
-              "headline-md": ["Playfair Display"],
-              "body-lg": ["DM Sans"],
-              "headline-lg-mobile": ["Playfair Display"],
-              "body-md": ["DM Sans"],
-            },
-            fontSize: {
-              "label-md": [
-                "14px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.05em",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
-              "headline-xl": [
-                "48px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "accent-text": ["16px", { lineHeight: "1.5", fontWeight: "500" }],
-              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
-              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-              "headline-lg-mobile": [
-                "28px",
-                { lineHeight: "1.3", fontWeight: "700" },
-              ],
-              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="satisfaction.css" />
   </head>
-  <body
-    class="text-on-background font-body-md antialiased min-h-screen flex flex-col"
-  >
-    <!-- TopNavBar -->
-    <nav
-      class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-md bg-surface dark:bg-surface-dim shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
-    >
-      <div
-        class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center"
-      >
-        <div class="flex items-center gap-2">
-          <img
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="page-progress" id="page-progress"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../index.html"
+          ><img
             src="../../assets/images/logo/logo.png"
-            alt="GOTAM'S - Produire sain, Nourrir mieux"
-            class="h-14 w-auto"
-          />
-        </div>
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center gap-6">
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all px-3 py-2 rounded-lg font-label-md text-label-md"
-            href="../../index.html"
-            >Accueil</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all px-3 py-2 rounded-lg font-label-md text-label-md"
-            href="../nos-produits/nos-produits.html"
-            \n
-            >Produits</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all px-3 py-2 rounded-lg font-label-md text-label-md"
-            href="../notre-histoire/notre-histoire.html"
-            \n
-            >Notre Histoire</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all px-3 py-2 rounded-lg font-label-md text-label-md"
-            href="../notre-processus/notre-processus.html"
-            >Notre Processus</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all px-3 py-2 rounded-lg font-label-md text-label-md"
-            href="../agro-premium-organic/agro-premium-organic.html"
-            >Agro-Premium Organic</a
-          >
-          <a
-            class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 px-3 py-2 font-label-md text-label-md"
-            href="#"
+            alt="GOTAM'S — Produire sain, Nourrir mieux."
+        /></a>
+        <nav class="nav-desktop" aria-label="Navigation principale">
+          <a href="../../index.html">Accueil</a>
+          <a href="../nos-produits/nos-produits.html">Produits</a>
+          <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+          <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+          <a class="is-active" href="../satisfaction/satisfaction.html"
             >Satisfaction</a
           >
-        </div>
-        <div class="hidden md:flex items-center gap-4">
-          <button
-            class="bg-[#E65100] text-white rounded-[16px] px-6 py-2 font-label-md text-label-md hover:opacity-90 transition-opacity"
-          >
-            Commander maintenant
-          </button>
-        </div>
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden text-primary p-2" id="mobileMenuBtn">
-          <span class="material-symbols-outlined">menu</span>
+        </nav>
+        <a class="btn btn-accent" href="../commander/commander.html"
+          >Commander</a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
         </button>
       </div>
-      <div
-        class="hidden md:hidden flex-col gap-2 px-margin-mobile pb-4"
-        id="mobileMenu"
+    </header>
+    <nav class="nav-mobile" aria-label="Navigation mobile">
+      <a href="../../index.html">Accueil</a>
+      <a href="../nos-produits/nos-produits.html">Produits</a>
+      <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+      <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+      <a class="is-active" href="../satisfaction/satisfaction.html"
+        >Satisfaction</a
       >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../../index.html"
-          >Accueil</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../nos-produits/nos-produits.html"
-          >Produits</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../notre-histoire/notre-histoire.html"
-          >Notre Histoire</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../notre-processus/notre-processus.html"
-          >Notre Processus</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../agro-premium-organic/agro-premium-organic.html"
-          >Agro-Premium Organic</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../satisfaction/satisfaction.html"
-          >Satisfaction</a
-        >
-      </div>
+      <a class="btn btn-accent" href="../commander/commander.html"
+        >Commander maintenant</a
+      >
     </nav>
-    <!-- Main Content -->
-    <main
-      class="flex-grow pt-[100px] pb-stack-lg max-w-[1200px] mx-auto w-full px-margin-mobile md:px-margin-desktop"
-    >
-      <!-- Hero Section -->
-      <header class="text-center mb-stack-lg mt-stack-md">
-        <h1
-          class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary-container mb-4"
-        >
-          Dites-nous ce que vous pensez
-        </h1>
-        <p
-          class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
-        >
-          Votre avis est essentiel pour nous aider à parfaire nos recettes et
-          vous offrir la meilleure expérience végétale.
-        </p>
-      </header>
-      <!-- Form Container -->
-      <div
-        class="bg-white rounded-[16px] premium-shadow p-6 md:p-10 max-w-4xl mx-auto relative overflow-hidden"
-      >
-        <!-- Success Message Overlay (Hidden by default) -->
-        <div
-          class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center text-center p-8"
-          id="successMessage"
-        >
-          <div
-            class="w-20 h-20 bg-[#F1F8E9] rounded-full flex items-center justify-center mb-6"
-          >
-            <span
-              class="material-symbols-outlined text-4xl text-[#2E7D32]"
-              style="font-variation-settings: &quot;FILL&quot; 1"
-              >check_circle</span
-            >
-          </div>
-          <h2
-            class="font-headline-lg text-headline-lg text-primary-container mb-4"
-          >
-            ✅ Merci !
-          </h2>
-          <p class="font-body-lg text-body-lg text-on-surface-variant">
-            Vos retours ont bien été reçus et nous aideront à améliorer nos
-            produits.
+
+    <main id="contenu">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Enquêtes terrain</p>
+          <h1>Deux parcours, deux regards</h1>
+          <p class="lead">
+            Choisissez le questionnaire qui correspond à la personne rencontrée.
+            Les fiches reprennent le contenu officiel GOTAMS — Enquête ménages
+            et Enquête commerçants.
           </p>
-          <button
-            class="mt-8 border-2 border-[#1B5E20] text-[#1B5E20] rounded-[16px] px-8 py-3 font-label-md text-label-md hover:bg-[#F1F8E9] transition-colors"
-            onclick="
-              document.getElementById('successMessage').classList.add('hidden');
-              document.getElementById('feedbackForm').reset();
-            "
-          >
-            Retour à l'accueil
-          </button>
         </div>
-        <form
-          class="space-y-12"
-          id="feedbackForm"
-          onsubmit="
-            event.preventDefault();
-            document
-              .getElementById('successMessage')
-              .classList.remove('hidden');
-          "
-        >
-          <!-- Section 1: Profil & Produit -->
-          <section>
-            <div class="leaf-edge mb-6">
-              <h2 class="font-headline-md text-headline-md text-primary mb-2">
-                Fiche de Dégustation
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Informations de base sur la dégustation.
-              </p>
-            </div>
-            <div class="mb-6">
-              <label
-                class="block font-label-md text-label-md text-on-surface mb-2"
-                >Quel produit avez-vous dégusté ?</label
-              >
-              <select
-                id="produit"
-                name="produit"
-                required
-                class="w-full bg-[#FAFDF6] border-[#F1F8E9] rounded-[8px] focus:ring-0 focus:border-[#2E7D32] border-2 py-3 px-4 font-body-md text-body-md"
-              >
-                <option value="">Sélectionnez...</option>
-                <option value="lait_soja">Lait de soja</option>
-                <option value="yaourt_soja">Yaourt de soja</option>
-              </select>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label
-                  class="block font-label-md text-label-md text-on-surface mb-2"
-                  >Votre Tranche d'Âge</label
-                >
-                <select
-                  name="age"
-                  class="w-full bg-[#FAFDF6] border-[#F1F8E9] rounded-[8px] focus:ring-0 focus:border-[#2E7D32] border-2 py-3 px-4 font-body-md text-body-md"
-                >
-                  <option value="">Sélectionnez...</option>
-                  <option value="18-24">18-24 ans</option>
-                  <option value="25-34">25-34 ans</option>
-                  <option value="35-44">35-44 ans</option>
-                  <option value="45-54">45-54 ans</option>
-                  <option value="55+">55 ans et plus</option>
-                </select>
-              </div>
-              <div>
-                <label
-                  class="block font-label-md text-label-md text-on-surface mb-2"
-                  >Saveur Dégustée</label
-                >
-                <select
-                  name="saveur"
-                  class="w-full bg-[#FAFDF6] border-[#F1F8E9] rounded-[8px] focus:ring-0 focus:border-[#2E7D32] border-2 py-3 px-4 font-body-md text-body-md"
-                >
-                  <option value="">Sélectionnez...</option>
-                  <option value="nature">Nature Doux</option>
-                  <option value="vanille">Vanille Bourbon</option>
-                  <option value="cacao">Cacao Intense</option>
-                  <option value="fruits">Fruits Rouges</option>
-                </select>
-              </div>
-            </div>
-          </section>
-          <!-- Section 2: Évaluation (Star Ratings) -->
-          <section>
-            <div class="leaf-edge mb-6">
-              <h2 class="font-headline-md text-headline-md text-primary mb-2">
-                Évaluation Sensorielle
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Notez de 1 à 5 étoiles les différents aspects de notre produit
-                végétal.
-              </p>
-            </div>
-            <div class="space-y-6 bg-[#F1F8E9] p-6 rounded-[16px]">
-              <!-- Taste -->
-              <div
-                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
-              >
-                <span
-                  class="font-label-md text-label-md text-on-primary-fixed-variant"
-                  >Goût (Saveur globale)</span
-                >
-                <div class="flex star-rating gap-1 text-2xl">
-                  <input
-                    id="taste-5"
-                    name="taste"
-                    type="radio"
-                    value="5"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="taste-5"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="taste-4"
-                    name="taste"
-                    type="radio"
-                    value="4"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="taste-4"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="taste-3"
-                    name="taste"
-                    type="radio"
-                    value="3"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="taste-3"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="taste-2"
-                    name="taste"
-                    type="radio"
-                    value="2"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="taste-2"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="taste-1"
-                    name="taste"
-                    type="radio"
-                    value="1"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="taste-1"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                </div>
-              </div>
-              <!-- Texture -->
-              <div
-                class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
-              >
-                <span
-                  class="font-label-md text-label-md text-on-primary-fixed-variant"
-                  >Texture (Onctuosité)</span
-                >
-                <div class="flex star-rating gap-1 text-2xl">
-                  <input
-                    id="texture-5"
-                    name="texture"
-                    type="radio"
-                    value="5"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="texture-5"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="texture-4"
-                    name="texture"
-                    type="radio"
-                    value="4"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="texture-4"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="texture-3"
-                    name="texture"
-                    type="radio"
-                    value="3"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="texture-3"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="texture-2"
-                    name="texture"
-                    type="radio"
-                    value="2"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="texture-2"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                  <input
-                    id="texture-1"
-                    name="texture"
-                    type="radio"
-                    value="1"
-                  /><label
-                    class="material-symbols-outlined"
-                    for="texture-1"
-                    style="font-variation-settings: &quot;FILL&quot; 1"
-                    >star</label
-                  >
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Section 3: Prix et Intention -->
-          <section>
-            <div class="leaf-edge mb-6">
-              <h2 class="font-headline-md text-headline-md text-primary mb-2">
-                Positionnement
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Quel serait le prix juste pour ce produit ?
-              </p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <label class="cursor-pointer">
-                <input
-                  class="peer sr-only"
-                  name="price"
-                  type="radio"
-                  value="200"
-                />
-                <div
-                  class="bg-white border-2 border-[#F1F8E9] rounded-[12px] p-4 text-center peer-checked:border-[#2E7D32] peer-checked:bg-[#F1F8E9] hover:border-[#2E7D32]/50 transition-all premium-shadow-hover h-full flex flex-col justify-center"
-                >
-                  <span
-                    class="block font-headline-md text-headline-md text-primary-container"
-                    >200F</span
-                  >
-                </div>
-              </label>
-              <label class="cursor-pointer">
-                <input
-                  class="peer sr-only"
-                  name="price"
-                  type="radio"
-                  value="300"
-                />
-                <div
-                  class="bg-white border-2 border-[#F1F8E9] rounded-[12px] p-4 text-center peer-checked:border-[#2E7D32] peer-checked:bg-[#F1F8E9] hover:border-[#2E7D32]/50 transition-all premium-shadow-hover h-full flex flex-col justify-center"
-                >
-                  <span
-                    class="block font-headline-md text-headline-md text-primary-container"
-                    >300F</span
-                  >
-                </div>
-              </label>
-            </div>
-            <div class="mb-6">
-              <label
-                class="block font-label-md text-label-md text-on-surface mb-3"
-                >Seriez-vous prêt(e) à acheter ce produit régulièrement ?</label
-              >
-              <div class="flex gap-6">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input
-                    class="text-[#2E7D32] focus:ring-[#2E7D32] w-5 h-5"
-                    name="intent"
-                    type="radio"
-                    value="yes"
-                  />
-                  <span class="font-body-md text-body-md"
-                    >Oui, certainement</span
-                  >
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input
-                    class="text-[#2E7D32] focus:ring-[#2E7D32] w-5 h-5"
-                    name="intent"
-                    type="radio"
-                    value="maybe"
-                  />
-                  <span class="font-body-md text-body-md">Peut-être</span>
-                </label>
-              </div>
-            </div>
-          </section>
-          <!-- Section 4: Commentaires Libres -->
-          <section>
-            <div class="leaf-edge mb-6">
-              <h2 class="font-headline-md text-headline-md text-primary mb-2">
-                Commentaires Libres
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Avez-vous des suggestions d'amélioration ?
-              </p>
-            </div>
-            <textarea
-              name="commentaire"
-              class="w-full bg-[#FAFDF6] border-[#F1F8E9] rounded-[8px] focus:ring-0 focus:border-[#2E7D32] border-2 py-3 px-4 font-body-md text-body-md resize-y"
-              placeholder="Partagez vos impressions détaillées ici..."
-              rows="4"
-            ></textarea>
-          </section>
-          <!-- Submit Button -->
-          <div
-            class="pt-6 border-t border-surface-container-high flex justify-end"
-          >
-            <button
-              class="bg-[#E65100] text-white rounded-[16px] px-8 py-4 font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center gap-2 shadow-md"
-              type="submit"
+      </section>
+
+      <section class="section">
+        <div class="container survey-choice">
+          <a class="choice-card reveal" href="enquete-menages.html">
+            <p class="eyebrow">Fiche 01</p>
+            <h2>Enquête ménages</h2>
+            <p>
+              Pour les foyers de Soa et Yaoundé : habitudes de consommation du
+              lait, intérêt pour un lait ou un yaourt de soja local, dégustation
+              et prix acceptable.
+            </p>
+            <span class="btn btn-primary" style="margin-top: 1rem"
+              >Remplir l’enquête ménages</span
             >
-              <span>Envoyer mes retours</span>
-              <span class="material-symbols-outlined text-sm">send</span>
+          </a>
+          <a class="choice-card reveal" href="enquete-commercants.html">
+            <p class="eyebrow">Fiche 02</p>
+            <h2>Enquête commerçants</h2>
+            <p>
+              Pour boutiques, cantines, restaurants et autres points de vente :
+              activité actuelle, volumes, conditions commerciales et lettre
+              d’intention non engageante.
+            </p>
+            <span class="btn btn-primary" style="margin-top: 1rem"
+              >Remplir l’enquête commerçants</span
+            >
+          </a>
+        </div>
+        <div class="container">
+          <div class="export-bar">
+            <span id="survey-count">0 enquête enregistrée</span>
+            <button class="btn btn-outline" type="button" id="export-surveys">
+              Exporter les données
             </button>
           </div>
-        </form>
-      </div>
+        </div>
+      </section>
     </main>
-    <!-- SideNavBar (WhatsApp) -->
-    <a
-      class="fixed bottom-8 right-8 z-50 flex items-center justify-center rounded-full bg-tertiary-container dark:bg-tertiary text-on-tertiary-container dark:text-on-tertiary p-4 w-16 h-16 shadow-[0_8px_32px_rgba(0,0,0,0.12)] shadow-xl hover:scale-110 transition-transform duration-300"
-      href="#"
-      title="WhatsApp Support"
-    >
-      <span
-        class="material-symbols-outlined text-3xl"
-        style="font-variation-settings: &quot;FILL&quot; 1"
-        >chat</span
-      >
-    </a>
-    <!-- Footer -->
-    <footer
-      class="w-full pt-stack-lg pb-stack-md bg-surface-container-low dark:bg-surface-container-lowest bg-surface-container-low dark:bg-on-surface-variant/5"
-    >
-      <div
-        class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter"
-      >
-        <div class="col-span-1 md:col-span-2">
-          <div
-            class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4"
-          >
-            GOTAMS SARL
-          </div>
-          <p
-            class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-sm"
-          >
-            © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="../../assets/images/logo/logo.png" alt="GOTAM'S" />
+          <p>GOTAMS SARL<br />Yaoundé - Soa, Centre, Cameroun</p>
+          <p>
+            <a href="mailto:contact@gotams.org">contact@gotams.org</a><br /><a
+              href="https://wa.me/237699232344"
+              >699 232 344</a
+            >
           </p>
         </div>
-        <div class="flex flex-col gap-3">
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Produits</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Notre Histoire</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Notre Processus</a
-          >
+        <div>
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="../../index.html">Accueil</a>
+            <a href="../nos-produits/nos-produits.html">Produits</a>
+            <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+            <a href="../notre-processus/notre-processus.html"
+              >Notre Processus</a
+            >
+            <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+            <a href="../commander/commander.html">Commander</a>
+          </div>
         </div>
-        <div class="flex flex-col gap-3">
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md text-body-md flex items-center gap-2"
-            href="#"
-          >
-            <span class="material-symbols-outlined text-sm">location_on</span>
-            Soa, Cameroon
-          </a>
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary transition-colors font-body-md text-body-md flex items-center gap-2"
-            href="#"
-          >
-            <span class="material-symbols-outlined text-sm">mail</span>
-            Contact
-          </a>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="https://wa.me/237699232344">WhatsApp 699 232 344</a></p>
         </div>
       </div>
+      <div class="container footer-bottom">
+        GOTAMS SARL · Yaoundé - Soa, Centre, Cameroun
+      </div>
     </footer>
+    <a
+      class="wa-fab"
+      href="https://wa.me/237699232344"
+      aria-label="Écrire sur WhatsApp"
+      >WA</a
+    >
+    <div class="toast" id="toast" role="status"></div>
     <script src="../../assets/js/global.js"></script>
     <script src="satisfaction.js"></script>
   </body>

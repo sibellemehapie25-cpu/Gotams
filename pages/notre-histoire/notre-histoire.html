@@ -1,826 +1,267 @@
-<!doctype html>
-
-<html class="light" lang="fr">
+﻿<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Notre Histoire - GOTAMS SARL</title>
-    <!-- Material Symbols -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notre Histoire — GOTAM’S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Fonts: DM Sans & Playfair Display -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CSS with configuration -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-primary-fixed": "#002203",
-              "on-error": "#ffffff",
-              error: "#ba1a1a",
-              "secondary-fixed": "#a3f69c",
-              "inverse-surface": "#313030",
-              "tertiary-fixed": "#ffdbcf",
-              "on-secondary-container": "#217128",
-              "surface-dim": "#dcd9d9",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#acf4a4",
-              "error-container": "#ffdad6",
-              primary: "#00450d",
-              "surface-container-low": "#f6f3f2",
-              "secondary-container": "#a0f399",
-              "on-secondary-fixed-variant": "#005312",
-              "inverse-on-surface": "#f3f0ef",
-              "surface-bright": "#fcf9f8",
-              "on-background": "#1c1b1b",
-              "on-surface": "#1c1b1b",
-              "surface-tint": "#2a6b2c",
-              "surface-container-highest": "#e5e2e1",
-              "outline-variant": "#c0c9bb",
-              "surface-variant": "#e5e2e1",
-              "on-primary-fixed-variant": "#0c5216",
-              tertiary: "#6c2200",
-              "on-tertiary-fixed-variant": "#802a00",
-              "surface-container-high": "#eae7e7",
-              "secondary-fixed-dim": "#88d982",
-              "surface-container-lowest": "#ffffff",
-              "tertiary-fixed-dim": "#ffb59a",
-              outline: "#717a6d",
-              "on-primary": "#ffffff",
-              "on-surface-variant": "#41493e",
-              background: "#fcf9f8",
-              surface: "#fcf9f8",
-              "tertiary-container": "#933100",
-              "on-error-container": "#93000a",
-              "on-tertiary-fixed": "#380d00",
-              "primary-container": "#1b5e20",
-              "surface-container": "#f0eded",
-              "on-tertiary-container": "#ffb498",
-              "on-secondary": "#ffffff",
-              "primary-fixed-dim": "#91d78a",
-              "inverse-primary": "#91d78a",
-              "on-primary-container": "#90d689",
-              "on-secondary-fixed": "#002204",
-              secondary: "#1b6d24",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              base: "8px",
-              "stack-md": "24px",
-              "margin-mobile": "16px",
-              "container-max": "1200px",
-              "stack-lg": "48px",
-              "margin-desktop": "40px",
-              "stack-sm": "12px",
-              gutter: "24px",
-            },
-            fontFamily: {
-              "label-md": ["DM Sans"],
-              "headline-lg": ["Playfair Display"],
-              "headline-xl": ["Playfair Display"],
-              "accent-text": ["DM Sans"],
-              "headline-md": ["Playfair Display"],
-              "body-lg": ["DM Sans"],
-              "headline-lg-mobile": ["Playfair Display"],
-              "body-md": ["DM Sans"],
-            },
-            fontSize: {
-              "label-md": [
-                "14px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.05em",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-lg": [
-                "32px",
-                {
-                  lineHeight: "1.3",
-                  fontWeight: "700",
-                },
-              ],
-              "headline-xl": [
-                "48px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "accent-text": [
-                "16px",
-                {
-                  lineHeight: "1.5",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-md": [
-                "24px",
-                {
-                  lineHeight: "1.4",
-                  fontWeight: "600",
-                },
-              ],
-              "body-lg": [
-                "18px",
-                {
-                  lineHeight: "1.6",
-                  fontWeight: "400",
-                },
-              ],
-              "headline-lg-mobile": [
-                "28px",
-                {
-                  lineHeight: "1.3",
-                  fontWeight: "700",
-                },
-              ],
-              "body-md": [
-                "16px",
-                {
-                  lineHeight: "1.6",
-                  fontWeight: "400",
-                },
-              ],
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="notre-histoire.css" />
   </head>
-  <body class="bg-background text-on-background font-body-md antialiased pt-24">
-    <!-- TopNavBar -->
-    <header
-      class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)] shadow-md"
-    >
-      <div
-        class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center"
-      >
-        <!-- Brand Logo -->
-        <a
-          class="flex items-center gap-2 hover:scale-95 duration-150 transition-transform"
-          href="#"
-        >
-          <img
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="page-progress" id="page-progress"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../index.html"
+          ><img
             src="../../assets/images/logo/logo.png"
-            alt="GOTAM'S - Produire sain, Nourrir mieux"
-            class="h-14 w-auto"
-          />
-        </a>
-        <!-- Navigation Links (Desktop) -->
-        <nav class="hidden md:flex gap-8">
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../../index.html"
-            >Accueil</a
-          >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../nos-produits/nos-produits.html"
-            >Produits</a
-          >
-          <!-- Active State Logic Applied Here based on Page Intent (About/Notre Histoire) -->
-          <a
-            class="text-primary font-bold border-b-2 border-primary pb-1 hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../notre-histoire/notre-histoire.html"
+            alt="GOTAM'S — Produire sain, Nourrir mieux."
+        /></a>
+        <nav class="nav-desktop" aria-label="Navigation principale">
+          <a href="../../index.html">Accueil</a>
+          <a href="../nos-produits/nos-produits.html">Produits</a>
+          <a class="is-active" href="../notre-histoire/notre-histoire.html"
             >Notre Histoire</a
           >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../notre-processus/notre-processus.html"
-            >Notre Processus</a
-          >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../agro-premium-organic/agro-premium-organic.html"
-            >Agro-Premium Organic</a
-          >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container-low transition-all px-3 py-2 rounded-lg"
-            href="../satisfaction/satisfaction.html"
-            >Satisfaction</a
-          >
+          <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+          <a href="../satisfaction/satisfaction.html">Satisfaction</a>
         </nav>
-        <!-- Trailing Action -->
+        <a class="btn btn-accent" href="../commander/commander.html"
+          >Commander</a
+        >
         <button
-          class="hidden md:flex items-center gap-2 bg-[#E65100] text-white px-6 py-3 rounded-[16px] font-label-md text-label-md hover:opacity-90 transition-opacity"
+          class="nav-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
         >
-          Commander maintenant
+          <span></span><span></span><span></span>
         </button>
-        <!-- Mobile Menu Trigger -->
-        <button class="md:hidden text-primary p-2" id="mobileMenuBtn">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
-      <div
-        class="hidden md:hidden flex-col gap-2 px-margin-mobile pb-4"
-        id="mobileMenu"
-      >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../../index.html"
-          >Accueil</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../nos-produits/nos-produits.html"
-          >Produits</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../notre-histoire/notre-histoire.html"
-          >Notre Histoire</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../notre-processus/notre-processus.html"
-          >Notre Processus</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../agro-premium-organic/agro-premium-organic.html"
-          >Agro-Premium Organic</a
-        >
-        <a
-          class="font-label-md text-label-md text-on-surface-variant py-2"
-          href="../satisfaction/satisfaction.html"
-          >Satisfaction</a
-        >
       </div>
     </header>
-    <!-- Main Content Canvas -->
-    <main class="w-full">
-      <!-- Hero Section -->
-      <section
-        class="relative w-full min-h-[60vh] flex items-center justify-center pt-stack-lg pb-stack-lg"
+    <nav class="nav-mobile" aria-label="Navigation mobile">
+      <a href="../../index.html">Accueil</a>
+      <a href="../nos-produits/nos-produits.html">Produits</a>
+      <a class="is-active" href="../notre-histoire/notre-histoire.html"
+        >Notre Histoire</a
       >
-        <!-- Abstract Background Graphic -->
-        <div
-          class="absolute inset-0 z-0 overflow-hidden bg-light-green opacity-50 pointer-events-none"
-        >
-          <!-- Using a soft radial gradient to simulate a lush, airy feel -->
-          <div
-            class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-container/10 via-transparent to-transparent"
-          ></div>
-        </div>
-        <div
-          class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mt-12 md:mt-0"
-        >
-          <h1
-            class="font-headline-xl text-headline-xl text-primary mb-stack-sm md:hidden font-headline-lg-mobile text-headline-lg-mobile"
-          >
-            Notre Histoire
-          </h1>
-          <h1
-            class="font-headline-xl text-headline-xl text-primary mb-stack-sm hidden md:block"
-          >
-            Notre Histoire
-          </h1>
-          <p
-            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-md italic"
-          >
-            "Trois femmes, une vision, un soja."
-          </p>
-          <div class="h-1 w-24 bg-primary mx-auto rounded-full"></div>
-        </div>
-      </section>
-      <!-- Origin Story Section (Bento/Asymmetric Layout) -->
-      <section
-        class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
+      <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+      <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+      <a class="btn btn-accent" href="../commander/commander.html"
+        >Commander maintenant</a
       >
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-          <!-- Image Container -->
-          <div class="md:col-span-7 relative group">
-            <div
-              class="absolute inset-0 bg-primary-container rounded-[16px] translate-x-4 translate-y-4 -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"
-            ></div>
-            <img
-              class="w-full h-auto object-cover rounded-[16px] premium-shadow border-4 border-surface"
-              data-alt="A high-quality, professional photograph of three inspiring female founders standing together in a modern, sunlit agricultural processing facility in Cameroon. The scene is bright and airy, reflecting a premium 'Modern Organic' style with light green and warm white tones. They look confident and approachable, wearing smart-casual attire with subtle green accents. The lighting is soft and natural, emphasizing a trustworthy and fertile brand identity."
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS1WTel2rJB0twdok30Z6PEPmYsKN0-rgtGpOisq1pq7qgmJRo__FOhLcSLh6vEaeQl23w89kBYmw_MzSuHmvMvsRfMil90MrvJABsC8N7rdB0WUO0RxC_E9KJPypmHgjS62YwIhF0JA1T8fZ-lITKEZ3zW_3ByPHclYYXV2gQrDASYO1cjDRaNpEyVW2eSzcxffJITkXD--QE7HDeD59-WdY6ZlpCjqc1q1IgYLPDAi4tmrntgFT0"
-            />
-          </div>
-          <!-- Text Container -->
-          <div class="md:col-span-5 md:pl-8 mt-stack-md md:mt-0">
-            <div class="leaf-edge">
-              <h2
-                class="font-headline-md text-headline-md text-primary mb-stack-sm"
-              >
-                L'Étincelle
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
-                Tout a commencé avec un constat simple et personnel. Face à
-                l'intolérance au lactose croissante dans notre entourage et au
-                manque d'alternatives saines, savoureuses et locales, nous avons
-                décidé d'agir.
-              </p>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Nous avons uni nos forces pour valoriser les ressources
-                agricoles camerounaises. En nous concentrant sur le soja, une
-                légumineuse riche et versatile, nous avons jeté les bases d'une
-                production locale respectueuse de notre terre et de la santé de
-                notre communauté, transformant une difficulté nutritionnelle en
-                une opportunité d'innovation gourmande.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Timeline Section -->
-      <section class="py-stack-lg bg-light-green relative overflow-hidden">
-        <!-- Decorative leaf motif background -->
-        <span
-          class="material-symbols-outlined absolute -top-12 -right-12 text-[200px] text-primary/5 pointer-events-none"
-          style="font-variation-settings: &quot;FILL&quot; 1"
-          >eco</span
-        >
-        <div
-          class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10"
-        >
-          <div class="text-center mb-stack-md">
-            <h2
-              class="font-headline-lg text-headline-lg text-primary md:hidden font-headline-lg-mobile text-headline-lg-mobile"
-            >
-              Notre Évolution
-            </h2>
-            <h2
-              class="font-headline-lg text-headline-lg text-primary hidden md:block"
-            >
-              Notre Évolution
-            </h2>
-          </div>
-          <!-- Vertical Timeline Layout -->
-          <div class="relative wrap overflow-hidden p-10 h-full">
-            <!-- Timeline vertical line -->
-            <div
-              class="absolute border-opacity-20 border-primary h-full border"
-              style="left: 50%"
-            ></div>
-            <!-- Milestone 1 -->
-            <div
-              class="mb-8 flex justify-between items-center w-full right-timeline"
-            >
-              <div class="order-1 w-5/12"></div>
-              <div
-                class="z-20 flex items-center order-1 bg-[#E65100] shadow-xl w-8 h-8 rounded-full"
-              >
-                <h1 class="mx-auto font-label-md text-label-md text-white">
-                  1
-                </h1>
-              </div>
-              <div
-                class="order-1 bg-surface rounded-[16px] premium-shadow w-5/12 px-6 py-4"
-              >
-                <h3
-                  class="font-label-md text-label-md text-primary-container mb-1"
-                >
-                  2024
-                </h3>
-                <h4
-                  class="font-headline-md text-headline-md text-on-surface mb-2"
-                >
-                  Idéation &amp; Formulation
-                </h4>
-                <p
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
-                >
-                  Recherche approfondie sur l'extraction du lait de soja et
-                  premiers tests de recettes dans une cuisine artisanale.
-                </p>
-              </div>
-            </div>
-            <!-- Milestone 2 -->
-            <div
-              class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-            >
-              <div class="order-1 w-5/12"></div>
-              <div
-                class="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full"
-              >
-                <h1 class="mx-auto font-label-md text-label-md text-white">
-                  2
-                </h1>
-              </div>
-              <div
-                class="order-1 bg-surface rounded-[16px] premium-shadow w-5/12 px-6 py-4 text-right"
-              >
-                <h3
-                  class="font-label-md text-label-md text-primary-container mb-1"
-                >
-                  Mi-2024
-                </h3>
-                <h4
-                  class="font-headline-md text-headline-md text-on-surface mb-2"
-                >
-                  Sourcing Local
-                </h4>
-                <p
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
-                >
-                  Établissement de partenariats durables avec des agriculteurs
-                  locaux de Soa pour garantir un soja non-OGM de première
-                  qualité.
-                </p>
-              </div>
-            </div>
-            <!-- Milestone 3 -->
-            <div
-              class="mb-8 flex justify-between items-center w-full right-timeline"
-            >
-              <div class="order-1 w-5/12"></div>
-              <div
-                class="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full"
-              >
-                <h1 class="mx-auto font-label-md text-label-md text-white">
-                  3
-                </h1>
-              </div>
-              <div
-                class="order-1 bg-surface rounded-[16px] premium-shadow w-5/12 px-6 py-4"
-              >
-                <h3
-                  class="font-label-md text-label-md text-primary-container mb-1"
-                >
-                  Début 2025
-                </h3>
-                <h4
-                  class="font-headline-md text-headline-md text-on-surface mb-2"
-                >
-                  Prototypage
-                </h4>
-                <p
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
-                >
-                  Mise en place de la première ligne de production pilote et
-                  validation des profils gustatifs par des panels de
-                  consommateurs.
-                </p>
-              </div>
-            </div>
-            <!-- Milestone 4 -->
-            <div
-              class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-            >
-              <div class="order-1 w-5/12"></div>
-              <div
-                class="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full"
-              >
-                <h1 class="mx-auto font-label-md text-label-md text-white">
-                  4
-                </h1>
-              </div>
-              <div
-                class="order-1 bg-surface rounded-[16px] premium-shadow w-5/12 px-6 py-4 text-right"
-              >
-                <h3
-                  class="font-label-md text-label-md text-primary-container mb-1"
-                >
-                  Fin 2025
-                </h3>
-                <h4
-                  class="font-headline-md text-headline-md text-on-surface mb-2"
-                >
-                  Certification
-                </h4>
-                <p
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
-                >
-                  Obtention des normes sanitaires et développement de l'identité
-                  de marque premium.
-                </p>
-              </div>
-            </div>
-            <!-- Milestone 5 -->
-            <div
-              class="mb-8 flex justify-between items-center w-full right-timeline"
-            >
-              <div class="order-1 w-5/12"></div>
-              <div
-                class="z-20 flex items-center order-1 bg-secondary shadow-xl w-8 h-8 rounded-full ring-4 ring-secondary-container"
-              >
-                <h1 class="mx-auto font-label-md text-label-md text-white">
-                  <span class="material-symbols-outlined text-sm"
-                    >rocket_launch</span
-                  >
-                </h1>
-              </div>
-              <div
-                class="order-1 bg-surface border-2 border-primary-container rounded-[16px] premium-shadow w-5/12 px-6 py-4"
-              >
-                <h3
-                  class="font-label-md text-label-md text-primary-container mb-1"
-                >
-                  2026
-                </h3>
-                <h4 class="font-headline-md text-headline-md text-primary mb-2">
-                  Lancement Officiel (TEF)
-                </h4>
-                <p
-                  class="font-body-md text-body-md text-on-surface-variant leading-tight"
-                >
-                  Inauguration de la production à l'échelle commerciale et
-                  lancement de notre gamme sur le marché national sous
-                  l'impulsion du programme TEF.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Team Section (Glassmorphism inspired cards) -->
-      <section
-        class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-      >
-        <div class="text-center mb-stack-md">
-          <h2
-            class="font-headline-lg text-headline-lg text-primary md:hidden font-headline-lg-mobile text-headline-lg-mobile"
-          >
-            L'Équipe Dirigeante
-          </h2>
-          <h2
-            class="font-headline-lg text-headline-lg text-primary hidden md:block"
-          >
-            L'Équipe Dirigeante
-          </h2>
-          <p class="font-body-md text-body-md text-on-surface-variant mt-2">
-            La passion et l'expertise derrière chaque goutte.
+    </nav>
+
+    <main id="contenu">
+      <section class="page-hero">
+        <div class="container" style="text-align: center">
+          <p class="eyebrow">GOTAMS SARL</p>
+          <h1>Notre histoire</h1>
+          <p class="lead" style="margin: 0 auto">
+            « Trois femmes, une vision, un soja. »
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          <!-- CEO Card -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow flex flex-col items-center text-center group border border-light-green hover:border-primary-container transition-colors duration-300"
-          >
-            <div
-              class="w-32 h-32 rounded-full overflow-hidden mb-4 ring-4 ring-light-green group-hover:ring-primary-container transition-all"
-            >
-              <img
-                class="w-full h-full object-cover"
-                data-alt="A professional headshot of Manye Waffo Anne Bertille, CEO of an agri-food startup. She is a black African woman exuding confidence, warmth, and leadership. The portrait is taken in a bright, modern office with soft natural lighting and subtle indoor plants in the blurred background, aligning with a premium Modern Organic aesthetic."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRaS3_uPdGdT5hm0Z5nS-J0URlt0Scwz4_erHKJX4-YIH9M9_vBQ-oZ_VQZN0mxTViCVvzoFWJCDZswNgId1OwvzGKULgSOEv2LofFM76Gl-zF8mZzmLTf5DLTeLFGK_x79f1xnxkQNLFP1dFJxvDCP8OwKD3Cm99nUvi_C6dNSOWi6dJAumKn-LncHE-FfDsytjtEmvsA24pMy0ScoWsBw5q2eZTQ3wv_wceEq3-JiBmTFinW_nz3"
-              />
-            </div>
-            <h3 class="font-headline-md text-headline-md text-on-surface">
-              Manye Waffo Anne Bertille
-            </h3>
-            <span
-              class="inline-block bg-[#F1F8E9] text-primary-fixed-variant font-label-md text-label-md px-4 py-1 rounded-full mt-2 mb-3"
-              >CEO &amp; Fondatrice</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Visionnaire engagée pour une nutrition saine et la valorisation du
-              terroir camerounais.
-            </p>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="organic-panel reveal">
+            <img src="../../assets/images/logo/logo-mark.png" alt="" />
           </div>
-          <!-- Engineer Card (Placeholder) -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow flex flex-col items-center text-center group border border-light-green hover:border-primary-container transition-colors duration-300"
-          >
-            <div
-              class="w-32 h-32 rounded-full bg-surface-container-high flex items-center justify-center mb-4 ring-4 ring-light-green group-hover:ring-primary-container transition-all"
-            >
-              <span
-                class="material-symbols-outlined text-4xl text-outline"
-                style="font-variation-settings: &quot;FILL&quot; 0"
-                >science</span
-              >
-            </div>
-            <h3 class="font-headline-md text-headline-md text-on-surface">
-              [Nom de l'Associée]
-            </h3>
-            <span
-              class="inline-block bg-[#F1F8E9] text-primary-fixed-variant font-label-md text-label-md px-4 py-1 rounded-full mt-2 mb-3"
-              >Directrice Technique (Ingénieure)</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Experte en transformation agroalimentaire, garante de la qualité
-              et de l'innovation de nos procédés.
+          <div class="reveal">
+            <h2>L’étincelle</h2>
+            <p>
+              Tout a commencé avec un constat simple et personnel. Face à
+              l’intolérance au lactose dans l’entourage et au manque
+              d’alternatives saines, savoureuses et locales, trois femmes ont
+              décidé d’agir.
             </p>
-          </div>
-          <!-- Logistics Card (Placeholder) -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow flex flex-col items-center text-center group border border-light-green hover:border-primary-container transition-colors duration-300"
-          >
-            <div
-              class="w-32 h-32 rounded-full bg-surface-container-high flex items-center justify-center mb-4 ring-4 ring-light-green group-hover:ring-primary-container transition-all"
-            >
-              <span
-                class="material-symbols-outlined text-4xl text-outline"
-                style="font-variation-settings: &quot;FILL&quot; 0"
-                >local_shipping</span
-              >
-            </div>
-            <h3 class="font-headline-md text-headline-md text-on-surface">
-              [Nom de l'Associée]
-            </h3>
-            <span
-              class="inline-block bg-[#F1F8E9] text-primary-fixed-variant font-label-md text-label-md px-4 py-1 rounded-full mt-2 mb-3"
-              >Responsable Logistique</span
-            >
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Assure la fluidité de notre chaîne d'approvisionnement, du champ à
-              votre table.
+            <p>
+              Elles ont uni leurs forces pour valoriser les ressources agricoles
+              camerounaises. En se concentrant sur le soja, légumineuse riche et
+              versatile, elles ont jeté les bases d’une production locale
+              respectueuse de la terre et de la santé de la communauté.
             </p>
           </div>
         </div>
       </section>
-      <!-- Values Section (Bento Grid) -->
-      <section
-        class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-stack-lg"
-      >
-        <div class="leaf-edge mb-stack-md">
-          <h2
-            class="font-headline-lg text-headline-lg text-primary md:hidden font-headline-lg-mobile text-headline-lg-mobile"
-          >
-            Nos Valeurs
-          </h2>
-          <h2
-            class="font-headline-lg text-headline-lg text-primary hidden md:block"
-          >
-            Nos Valeurs
-          </h2>
+
+      <section class="section" style="background: #f6eedc">
+        <div class="container">
+          <h2 class="reveal">Notre évolution</h2>
+          <p class="note reveal">
+            Les dates ci-dessous figuraient déjà sur le site existant. Elles
+            doivent être confirmées par GOTAMS avant publication définitive.
+          </p>
+          <div class="timeline" style="margin-top: 1.6rem">
+            <article class="t-item reveal">
+              <div class="when">2024</div>
+              <h3>Idéation &amp; formulation</h3>
+              <p>
+                Recherche sur l’extraction du lait de soja et premiers tests de
+                recettes dans une cuisine artisanale.
+              </p>
+            </article>
+            <article class="t-item reveal">
+              <div class="when">Mi-2024</div>
+              <h3>Sourcing local</h3>
+              <p>
+                Partenariats avec des agriculteurs de Soa pour un soja de
+                première qualité, décrit comme non-OGM dans l’ancienne version
+                du site (à confirmer).
+              </p>
+            </article>
+            <article class="t-item reveal">
+              <div class="when">Début 2025</div>
+              <h3>Prototypage</h3>
+              <p>
+                Première ligne de production pilote et validation des profils
+                gustatifs auprès de panels de consommateurs.
+              </p>
+            </article>
+            <article class="t-item reveal">
+              <div class="when">Fin 2025</div>
+              <h3>Certification</h3>
+              <p>
+                Développement de l’identité de marque. Le statut exact des
+                normes sanitaires reste à confirmer.
+              </p>
+            </article>
+            <article class="t-item reveal">
+              <div class="when">2026</div>
+              <h3>Lancement officiel (TEF)</h3>
+              <p>
+                Passage à une production commerciale et lancement de la gamme,
+                sous l’impulsion du programme TEF selon le site existant.
+              </p>
+            </article>
+          </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          <!-- Value 1 -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow transition-all duration-300 hover:-translate-y-1"
-          >
-            <div
-              class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center mb-4"
-            >
-              <span
-                class="material-symbols-outlined text-primary-container"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >workspace_premium</span
-              >
-            </div>
-            <h3 class="font-accent-text text-accent-text text-primary mb-2">
-              Qualité Intransigeante
-            </h3>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant text-sm"
-            >
-              Nous sélectionnons rigoureusement nos ingrédients pour offrir un
-              produit fini d'excellence, pur et nutritif.
-            </p>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>L’équipe</h2>
+          <p class="lead">
+            Les noms manquants ne sont pas inventés. Les photos individuelles ne
+            sont pas affichées : aucune photo officielle n’a été fournie.
+          </p>
+          <div class="grid-3" style="margin-top: 1.6rem">
+            <article class="card" style="padding: 1.4rem; text-align: center">
+              <div class="team-photo" aria-hidden="true"></div>
+              <h3>Manye Waffo Anne Bertille</h3>
+              <p class="chip" style="cursor: default">CEO &amp; fondatrice</p>
+              <p>
+                Visionnaire engagée pour une nutrition saine et la valorisation
+                du terroir camerounais.
+              </p>
+            </article>
+            <article class="card" style="padding: 1.4rem; text-align: center">
+              <div class="team-photo" aria-hidden="true"></div>
+              <h3>Direction technique</h3>
+              <p class="chip" style="cursor: default">
+                Ingénieure — nom à compléter
+              </p>
+              <p>
+                Fonction identifiée dans le site existant. Le nom n’était qu’un
+                placeholder et n’est pas repris.
+              </p>
+            </article>
+            <article class="card" style="padding: 1.4rem; text-align: center">
+              <div class="team-photo" aria-hidden="true"></div>
+              <h3>Logistique</h3>
+              <p class="chip" style="cursor: default">
+                Responsable — nom à compléter
+              </p>
+              <p>
+                Assure la chaîne d’approvisionnement, du champ à la table.
+                Identité à renseigner par GOTAMS.
+              </p>
+            </article>
           </div>
-          <!-- Value 2 -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow transition-all duration-300 hover:-translate-y-1"
-          >
-            <div
-              class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center mb-4"
-            >
-              <span
-                class="material-symbols-outlined text-primary-container"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >location_on</span
-              >
-            </div>
-            <h3 class="font-accent-text text-accent-text text-primary mb-2">
-              Ancrage Local
-            </h3>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant text-sm"
-            >
-              Produit et transformé au Cameroun, favorisant les circuits courts
-              et soutenant l'économie de Soa.
-            </p>
-          </div>
-          <!-- Value 3 -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow transition-all duration-300 hover:-translate-y-1"
-          >
-            <div
-              class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center mb-4"
-            >
-              <span
-                class="material-symbols-outlined text-primary-container"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >lightbulb</span
-              >
-            </div>
-            <h3 class="font-accent-text text-accent-text text-primary mb-2">
-              Innovation Douce
-            </h3>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant text-sm"
-            >
-              Allier méthodes traditionnelles et technologies modernes pour une
-              extraction optimale et respectueuse du produit.
-            </p>
-          </div>
-          <!-- Value 4 -->
-          <div
-            class="bg-surface rounded-[16px] p-6 premium-shadow transition-all duration-300 hover:-translate-y-1"
-          >
-            <div
-              class="w-12 h-12 bg-primary-container/10 rounded-full flex items-center justify-center mb-4"
-            >
-              <span
-                class="material-symbols-outlined text-primary-container"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >diversity_3</span
-              >
-            </div>
-            <h3 class="font-accent-text text-accent-text text-primary mb-2">
-              Impact Social
-            </h3>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant text-sm"
-            >
-              Améliorer l'accès à une nutrition saine tout en valorisant le
-              travail des femmes et des agriculteurs ruraux.
-            </p>
+        </div>
+      </section>
+
+      <section class="section" style="background: #f6eedc">
+        <div class="container">
+          <h2>Nos valeurs</h2>
+          <div class="grid-4" style="margin-top: 1.4rem">
+            <article class="feature">
+              <h3>Qualité intransigeante</h3>
+              <p>
+                Ingrédients sélectionnés pour un produit fini pur et nutritif.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Ancrage local</h3>
+              <p>
+                Produit et transformé au Cameroun, en circuit court autour de
+                Soa.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Innovation douce</h3>
+              <p>Méthodes traditionnelles et procédés modernes d’extraction.</p>
+            </article>
+            <article class="feature">
+              <h3>Impact social</h3>
+              <p>
+                Accès à une nutrition saine, valorisation du travail des femmes
+                et des agriculteurs.
+              </p>
+            </article>
           </div>
         </div>
       </section>
     </main>
-    <!-- SideNavBar (FAB for WhatsApp) -->
-    <nav
-      class="fixed bottom-base right-base z-50 rounded-full p-4 w-16 h-16 shadow-[0_8px_32px_rgba(0,0,0,0.12)] shadow-xl bg-tertiary-container text-on-tertiary-container hover:scale-110 transition-transform duration-300 flex items-center justify-center cursor-pointer fixed bottom-8 right-8 z-50 flex items-center justify-center rounded-full"
-    >
-      <span class="material-symbols-outlined text-2xl">chat</span>
-      <!-- Visually hidden label for accessibility, actual label from JSON is tab_labels: ["WhatsApp Support"] -->
-      <span class="sr-only">WhatsApp Support</span>
-    </nav>
-    <!-- Footer -->
-    <footer
-      class="w-full pt-stack-lg pb-stack-md bg-surface-container-low shadow-none flat max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter"
-    >
-      <!-- Brand & Copyright -->
-      <div class="col-span-1 md:col-span-1 flex flex-col gap-4">
-        <span class="font-headline-md text-headline-md text-primary"
-          >GOTAMS SARL</span
-        >
-        <p class="font-body-md text-body-md text-on-surface-variant">
-          © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
-        </p>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="../../assets/images/logo/logo.png" alt="GOTAM'S" />
+          <p>GOTAMS SARL<br />Yaoundé - Soa, Centre, Cameroun</p>
+          <p>
+            <a href="mailto:contact@gotams.org">contact@gotams.org</a><br /><a
+              href="https://wa.me/237699232344"
+              >699 232 344</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="../../index.html">Accueil</a>
+            <a href="../nos-produits/nos-produits.html">Produits</a>
+            <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+            <a href="../notre-processus/notre-processus.html"
+              >Notre Processus</a
+            >
+            <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+            <a href="../commander/commander.html">Commander</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="https://wa.me/237699232344">WhatsApp 699 232 344</a></p>
+        </div>
       </div>
-      <!-- Links Container -->
-      <div
-        class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-4"
-      >
-        <div class="flex flex-col gap-2">
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Produits</a
-          >
-          <!-- Active Footer Link corresponding to Current Page -->
-          <a class="text-primary underline font-body-md text-body-md" href="#"
-            >Notre Histoire</a
-          >
-        </div>
-        <div class="flex flex-col gap-2">
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Notre Processus</a
-          >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-            href="#"
-            >Contact</a
-          >
-        </div>
-        <div class="flex flex-col gap-2">
-          <span
-            class="text-on-surface-variant font-body-md text-body-md flex items-center gap-1"
-            ><span class="material-symbols-outlined text-sm">location_on</span>
-            Soa, Cameroon</span
-          >
-          <a
-            class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md flex items-center gap-1"
-            href="#"
-            ><span class="material-symbols-outlined text-sm">chat</span>
-            WhatsApp Support</a
-          >
-        </div>
+      <div class="container footer-bottom">
+        GOTAMS SARL · Yaoundé - Soa, Centre, Cameroun
       </div>
     </footer>
+    <a
+      class="wa-fab"
+      href="https://wa.me/237699232344"
+      aria-label="Écrire sur WhatsApp"
+      >WA</a
+    >
+    <div class="toast" id="toast" role="status"></div>
     <script src="../../assets/js/global.js"></script>
+    <script src="notre-histoire.js"></script>
   </body>
 </html>

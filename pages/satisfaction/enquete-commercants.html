@@ -1,0 +1,937 @@
+﻿<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enquête commerçants — GOTAM’S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="satisfaction.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="page-progress" id="page-progress"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../index.html"
+          ><img
+            src="../../assets/images/logo/logo.png"
+            alt="GOTAM'S — Produire sain, Nourrir mieux."
+        /></a>
+        <nav class="nav-desktop" aria-label="Navigation principale">
+          <a href="../../index.html">Accueil</a>
+          <a href="../nos-produits/nos-produits.html">Produits</a>
+          <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+          <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+          <a class="is-active" href="../satisfaction/satisfaction.html"
+            >Satisfaction</a
+          >
+        </nav>
+        <a class="btn btn-accent" href="../commander/commander.html"
+          >Commander</a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="nav-mobile" aria-label="Navigation mobile">
+      <a href="../../index.html">Accueil</a>
+      <a href="../nos-produits/nos-produits.html">Produits</a>
+      <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+      <a href="../notre-processus/notre-processus.html">Notre Processus</a>
+      <a class="is-active" href="../satisfaction/satisfaction.html"
+        >Satisfaction</a
+      >
+      <a class="btn btn-accent" href="../commander/commander.html"
+        >Commander maintenant</a
+      >
+    </nav>
+
+    <main id="contenu">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Fiche terrain 02</p>
+          <h1>Enquête commerçants</h1>
+          <p class="lead">
+            Boutiques · Cantines · Restaurants · autres points de vente |
+            Produits végétaux à base de soja
+          </p>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container survey-shell">
+          <form data-survey-type="merchant" novalidate>
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span data-step-label>Étape 1 sur 5</span>
+                <span>Environ 5 minutes</span>
+              </div>
+              <div class="progress-bar" aria-hidden="true"><span></span></div>
+            </div>
+
+            <section class="step-panel is-active">
+              <p class="script-box">
+                « Bonjour ! Je représente GOTAMS, une entreprise de Soa qui
+                produit du lait et du yaourt à base de soja, des produits
+                végétaux locaux. Je souhaite savoir si un partenariat
+                d’approvisionnement pourrait vous intéresser. Cela prendra
+                environ 5 minutes. »
+              </p>
+              <h2>Identification</h2>
+              <div class="field">
+                <label for="date">Date <span class="req">*</span></label>
+                <input
+                  class="input"
+                  id="date"
+                  name="date"
+                  type="date"
+                  data-required="true"
+                />
+                <p class="error-msg">Indiquez la date.</p>
+              </div>
+              <div class="field">
+                <label for="enqueteur"
+                  >Enquêteur(trice) <span class="req">*</span></label
+                >
+                <input
+                  class="input"
+                  id="enqueteur"
+                  name="enqueteur"
+                  data-required="true"
+                />
+                <p class="error-msg">Champ requis.</p>
+              </div>
+              <div class="field">
+                <label for="zone"
+                  >Zone / Quartier <span class="req">*</span></label
+                >
+                <input
+                  class="input"
+                  id="zone"
+                  name="zone"
+                  data-required="true"
+                />
+                <p class="error-msg">Champ requis.</p>
+              </div>
+              <div class="field">
+                <label for="num_fiche">N° fiche</label>
+                <input class="input" id="num_fiche" name="num_fiche" />
+              </div>
+              <div class="field">
+                <label for="nom_etablissement"
+                  >Nom établissement <span class="req">*</span></label
+                >
+                <input
+                  class="input"
+                  id="nom_etablissement"
+                  name="nom_etablissement"
+                  data-required="true"
+                />
+                <p class="error-msg">Champ requis.</p>
+              </div>
+              <div class="field">
+                <label for="responsable">Responsable rencontré</label>
+                <input class="input" id="responsable" name="responsable" />
+              </div>
+              <div class="field">
+                <label for="contact">Contact</label>
+                <input class="input" id="contact" name="contact" />
+              </div>
+              <fieldset class="field">
+                <legend class="label">
+                  Type d’établissement <span class="req">*</span>
+                </legend>
+                <div class="choice-grid cols-2">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Boutique / Épicerie"
+                      data-required="true"
+                    /><span>Boutique / Épicerie</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Supermarché"
+                    /><span>Supermarché</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Restaurant / Maquis"
+                    /><span>Restaurant / Maquis</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Cantine scolaire"
+                    /><span>Cantine scolaire</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Hôtel / Auberge"
+                    /><span>Hôtel / Auberge</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Pharmacie"
+                    /><span>Pharmacie</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Boulangerie"
+                    /><span>Boulangerie</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="type_etablissement"
+                      value="Autre"
+                    /><span>Autre</span></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <div class="field is-hidden js-conditional" data-type-other>
+                <label for="type_autre">Autre : précisez</label>
+                <input class="input" id="type_autre" name="type_autre" />
+              </div>
+            </section>
+
+            <section class="step-panel">
+              <h2>Situation actuelle</h2>
+              <fieldset class="field">
+                <legend class="label">
+                  Q1. Vendez / utilisez-vous du lait ou du yaourt actuellement ?
+                  <span class="req">*</span>
+                </legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q1_vend"
+                      value="Oui, lait"
+                      data-required="true"
+                    /><span>Oui, lait</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q1_vend"
+                      value="Oui, yaourt"
+                    /><span>Oui, yaourt</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q1_vend"
+                      value="Oui, lait et yaourt"
+                    /><span>Oui, lait et yaourt</span></label
+                  >
+                  <label class="choice"
+                    ><input type="radio" name="q1_vend" value="Non" /><span
+                      >Non → passer à Q4</span
+                    ></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <div class="js-conditional" data-show-if-sells>
+                <div class="field">
+                  <label for="q1_lait_precision">Oui, lait → préciser</label>
+                  <input
+                    class="input"
+                    id="q1_lait_precision"
+                    name="q1_lait_precision"
+                  />
+                </div>
+                <div class="field">
+                  <label for="q1_yaourt_precision"
+                    >Oui, yaourt → préciser</label
+                  >
+                  <input
+                    class="input"
+                    id="q1_yaourt_precision"
+                    name="q1_yaourt_precision"
+                  />
+                </div>
+                <fieldset class="field">
+                  <legend class="label">
+                    Q2. Quel type de produit laitier utilisez-vous ?
+                  </legend>
+                  <div class="choice-grid">
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="q2_type"
+                        value="Lait en poudre importé"
+                      /><span>Lait en poudre importé</span></label
+                    >
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="q2_type"
+                        value="Lait UHT brique"
+                      /><span>Lait UHT brique</span></label
+                    >
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="q2_type"
+                        value="Lait frais local"
+                      /><span>Lait frais local</span></label
+                    >
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="q2_type"
+                        value="Yaourt industriel"
+                      /><span>Yaourt industriel</span></label
+                    >
+                    <label class="choice"
+                      ><input type="radio" name="q2_type" value="Autre" /><span
+                        >Autre</span
+                      ></label
+                    >
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="q2_autre">Autre : précisez</label>
+                  <input class="input" id="q2_autre" name="q2_autre" />
+                </div>
+                <h3>Q3. Produits achetés / utilisés actuellement</h3>
+                <div class="field">
+                  <label for="q3_marque">Nom du produit / marque</label
+                  ><input class="input" id="q3_marque" name="q3_marque" />
+                </div>
+                <div class="field">
+                  <label for="q3_qte">Quantité achetée / semaine</label
+                  ><input class="input" id="q3_qte" name="q3_qte" />
+                </div>
+                <div class="field">
+                  <label for="q3_prix">Prix payé par litre (FCFA)</label
+                  ><input class="input" id="q3_prix" name="q3_prix" />
+                </div>
+                <div class="field">
+                  <label for="q3_fournisseur">Fournisseur</label
+                  ><input
+                    class="input"
+                    id="q3_fournisseur"
+                    name="q3_fournisseur"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="step-panel">
+              <h2>Intérêt pour GOTAMS</h2>
+              <fieldset class="field">
+                <legend class="label">
+                  Q4. Intérêt pour du lait / yaourt de soja local GOTAMS
+                  <span class="req">*</span>
+                </legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q4_interet"
+                      value="Oui, très intéressé(e)"
+                      data-required="true"
+                    /><span>Oui, très intéressé(e)</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q4_interet"
+                      value="Oui, si prix compétitif"
+                    /><span>Oui, si prix compétitif</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q4_interet"
+                      value="Oui, après présentation / test ultérieur"
+                    /><span
+                      >Oui, après présentation / test ultérieur</span
+                    ></label
+                  >
+                  <label class="choice"
+                    ><input type="radio" name="q4_interet" value="Non" /><span
+                      >Non</span
+                    ></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <h3>Q5. Volume hebdomadaire souhaité si disponible</h3>
+              <div class="field">
+                <label for="vol_lait">Lait de soja : L / sem</label>
+                <input class="input" id="vol_lait" name="vol_lait" />
+              </div>
+              <div class="field">
+                <label for="vol_yaourt">Yaourt de soja : unités / sem</label>
+                <input class="input" id="vol_yaourt" name="vol_yaourt" />
+              </div>
+              <fieldset class="field">
+                <legend class="label">Fréquence</legend>
+                <div class="choice-grid cols-3">
+                  <label class="choice"
+                    ><input type="radio" name="frequence" value="Hebdo" /><span
+                      >Hebdo</span
+                    ></label
+                  >
+                  <label class="choice"
+                    ><input type="radio" name="frequence" value="2×/sem" /><span
+                      >2×/sem</span
+                    ></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="frequence"
+                      value="À la commande"
+                    /><span>À la commande</span></label
+                  >
+                </div>
+              </fieldset>
+            </section>
+
+            <section class="step-panel">
+              <h2>Conditions commerciales &amp; dégustation</h2>
+              <fieldset class="field">
+                <legend class="label">
+                  Q6. Prix d’achat acceptable — lait 1 L
+                  <span class="req">*</span>
+                </legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q6_prix"
+                      value="< 400 FCFA"
+                      data-required="true"
+                    /><span>&lt; 400 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q6_prix"
+                      value="400–600 FCFA"
+                    /><span>400–600 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q6_prix"
+                      value="600–800 FCFA"
+                    /><span>600–800 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input type="radio" name="q6_prix" value="Autre" /><span
+                      >Autre</span
+                    ></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <div class="field">
+                <label for="q6_autre">Autre : __________ FCFA</label>
+                <input class="input" id="q6_autre" name="q6_autre" />
+              </div>
+              <fieldset class="field">
+                <legend class="label">
+                  Q7. Prix d’achat acceptable — yaourt / unité
+                  <span class="req">*</span>
+                </legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q7_prix"
+                      value="< 200 FCFA"
+                      data-required="true"
+                    /><span>&lt; 200 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q7_prix"
+                      value="200–350 FCFA"
+                    /><span>200–350 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q7_prix"
+                      value="350–500 FCFA"
+                    /><span>350–500 FCFA</span></label
+                  >
+                  <label class="choice"
+                    ><input type="radio" name="q7_prix" value="Autre" /><span
+                      >Autre</span
+                    ></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <div class="field">
+                <label for="q7_autre">Autre : __________ FCFA</label>
+                <input class="input" id="q7_autre" name="q7_autre" />
+              </div>
+              <fieldset class="field">
+                <legend class="label">
+                  Q8. Mode de livraison préféré <span class="req">*</span>
+                </legend>
+                <div class="choice-grid cols-2">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q8_livraison"
+                      value="Livraison par GOTAMS"
+                      data-required="true"
+                    /><span>Livraison par GOTAMS</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q8_livraison"
+                      value="Enlèvement à Soa"
+                    /><span>Enlèvement à Soa</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q8_livraison"
+                      value="Les deux"
+                    /><span>Les deux</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="q8_livraison"
+                      value="Autre"
+                    /><span>Autre</span></label
+                  >
+                </div>
+                <p class="error-msg">Sélectionnez une option.</p>
+              </fieldset>
+              <div class="field">
+                <label for="q8_autre">Autre : précisez</label>
+                <input class="input" id="q8_autre" name="q8_autre" />
+              </div>
+              <h3>Dégustation (si échantillons disponibles)</h3>
+              <h4>Lait de soja</h4>
+              <fieldset class="field">
+                <legend class="label">Goût (1→5)</legend>
+                <div class="score">
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_gout"
+                      value="1"
+                    />1</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_gout"
+                      value="2"
+                    />2</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_gout"
+                      value="3"
+                    />3</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_gout"
+                      value="4"
+                    />4</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_gout"
+                      value="5"
+                    />5</label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend class="label">Texture (1→5)</legend>
+                <div class="score">
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_texture"
+                      value="1"
+                    />1</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_texture"
+                      value="2"
+                    />2</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_texture"
+                      value="3"
+                    />3</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_texture"
+                      value="4"
+                    />4</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_lait_texture"
+                      value="5"
+                    />5</label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend class="label">Achèterait pour revendre ?</legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_lait_revente"
+                      value="Oui"
+                    /><span>Oui</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_lait_revente"
+                      value="Non"
+                    /><span>Non</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_lait_revente"
+                      value="À tester davantage"
+                    /><span>À tester davantage</span></label
+                  >
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="deg_lait_remarque">Remarque</label
+                ><textarea
+                  class="textarea"
+                  id="deg_lait_remarque"
+                  name="deg_lait_remarque"
+                ></textarea>
+              </div>
+              <h4>Yaourt de soja</h4>
+              <fieldset class="field">
+                <legend class="label">Goût (1→5)</legend>
+                <div class="score">
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_gout"
+                      value="1"
+                    />1</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_gout"
+                      value="2"
+                    />2</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_gout"
+                      value="3"
+                    />3</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_gout"
+                      value="4"
+                    />4</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_gout"
+                      value="5"
+                    />5</label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend class="label">Texture (1→5)</legend>
+                <div class="score">
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_texture"
+                      value="1"
+                    />1</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_texture"
+                      value="2"
+                    />2</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_texture"
+                      value="3"
+                    />3</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_texture"
+                      value="4"
+                    />4</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_texture"
+                      value="5"
+                    />5</label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend class="label">Achèterait pour revendre ?</legend>
+                <div class="choice-grid">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_revente"
+                      value="Oui"
+                    /><span>Oui</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_revente"
+                      value="Non"
+                    /><span>Non</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="deg_yaourt_revente"
+                      value="À tester davantage"
+                    /><span>À tester davantage</span></label
+                  >
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="deg_yaourt_remarque">Remarque</label
+                ><textarea
+                  class="textarea"
+                  id="deg_yaourt_remarque"
+                  name="deg_yaourt_remarque"
+                ></textarea>
+              </div>
+            </section>
+
+            <section class="step-panel is-hidden" data-letter-step>
+              <div class="legal-box">
+                <p class="eyebrow">GOTAMS — Intention d’approvisionnement</p>
+                <h2>Lettre d’intention — non engageante</h2>
+                <p>
+                  À compléter uniquement si le professionnel manifeste un
+                  intérêt.
+                </p>
+                <div class="field">
+                  <label for="loi_soussigne">Je soussigné(e)</label>
+                  <input
+                    class="input"
+                    id="loi_soussigne"
+                    name="loi_soussigne"
+                  />
+                </div>
+                <div class="field">
+                  <label for="loi_represente">représentant(e) de</label>
+                  <input
+                    class="input"
+                    id="loi_represente"
+                    name="loi_represente"
+                  />
+                </div>
+                <div class="field">
+                  <label for="loi_adresse">situé(e) à</label>
+                  <input class="input" id="loi_adresse" name="loi_adresse" />
+                </div>
+                <p>
+                  confirme mon intérêt pour un approvisionnement en produits
+                  GOTAMS dès leur disponibilité.
+                </p>
+                <div class="field">
+                  <label for="loi_vol_lait"
+                    >Volume estimé — lait / semaine (L)</label
+                  >
+                  <input class="input" id="loi_vol_lait" name="loi_vol_lait" />
+                </div>
+                <div class="field">
+                  <label for="loi_vol_yaourt"
+                    >Volume estimé — yaourt / semaine (unités)</label
+                  >
+                  <input
+                    class="input"
+                    id="loi_vol_yaourt"
+                    name="loi_vol_yaourt"
+                  />
+                </div>
+                <fieldset class="field">
+                  <legend class="label">Mode de livraison envisagé</legend>
+                  <div class="choice-grid">
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="loi_livraison"
+                        value="Livraison GOTAMS"
+                      /><span>Livraison GOTAMS</span></label
+                    >
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="loi_livraison"
+                        value="Enlèvement à Soa"
+                      /><span>Enlèvement à Soa</span></label
+                    >
+                    <label class="choice"
+                      ><input
+                        type="radio"
+                        name="loi_livraison"
+                        value="Les deux"
+                      /><span>Les deux</span></label
+                    >
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="loi_signataire">Nom du signataire</label>
+                  <input
+                    class="input"
+                    id="loi_signataire"
+                    name="loi_signataire"
+                  />
+                </div>
+                <div class="field">
+                  <label for="loi_date">Date</label>
+                  <input
+                    class="input"
+                    id="loi_date"
+                    name="loi_date"
+                    type="date"
+                  />
+                </div>
+                <p class="note">
+                  Cette lettre exprime uniquement un intérêt. Elle ne constitue
+                  ni une commande ferme, ni un engagement contractuel ou
+                  financier. Les produits GOTAMS visés sont des produits
+                  végétaux à base de soja. La signature manuscrite n’est pas
+                  collectée dans cette version web.
+                </p>
+              </div>
+            </section>
+
+            <div class="form-nav">
+              <button class="btn btn-outline" type="button" data-prev>
+                Précédent
+              </button>
+              <button class="btn btn-primary" type="button" data-next>
+                Suivant
+              </button>
+            </div>
+          </form>
+
+          <div class="success-card card is-hidden" id="survey-success">
+            <div class="big">✓</div>
+            <h2>Enquête enregistrée</h2>
+            <p>Identifiant : <strong data-survey-id></strong></p>
+            <a class="btn btn-primary" href="../satisfaction/satisfaction.html"
+              >Retour aux enquêtes</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="../../assets/images/logo/logo.png" alt="GOTAM'S" />
+          <p>GOTAMS SARL<br />Yaoundé - Soa, Centre, Cameroun</p>
+          <p>
+            <a href="mailto:contact@gotams.org">contact@gotams.org</a><br /><a
+              href="https://wa.me/237699232344"
+              >699 232 344</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="../../index.html">Accueil</a>
+            <a href="../nos-produits/nos-produits.html">Produits</a>
+            <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+            <a href="../notre-processus/notre-processus.html"
+              >Notre Processus</a
+            >
+            <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+            <a href="../commander/commander.html">Commander</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="https://wa.me/237699232344">WhatsApp 699 232 344</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        GOTAMS SARL · Yaoundé - Soa, Centre, Cameroun
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="../../assets/js/global.js"></script>
+    <script src="satisfaction.js"></script>
+  </body>
+</html>

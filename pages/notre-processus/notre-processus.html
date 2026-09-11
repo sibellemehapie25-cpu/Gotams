@@ -1,615 +1,187 @@
-<!doctype html>
-
-<html class="light" lang="fr">
+﻿<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Notre Processus - GOTAMS SARL</title>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notre Processus — GOTAM’S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Material Symbols -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind Config -->
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-primary-fixed": "#002203",
-              "on-error": "#ffffff",
-              error: "#ba1a1a",
-              "secondary-fixed": "#a3f69c",
-              "inverse-surface": "#313030",
-              "tertiary-fixed": "#ffdbcf",
-              "on-secondary-container": "#217128",
-              "surface-dim": "#dcd9d9",
-              "on-tertiary": "#ffffff",
-              "primary-fixed": "#acf4a4",
-              "error-container": "#ffdad6",
-              primary: "#00450d",
-              "surface-container-low": "#f6f3f2",
-              "secondary-container": "#a0f399",
-              "on-secondary-fixed-variant": "#005312",
-              "inverse-on-surface": "#f3f0ef",
-              "surface-bright": "#fcf9f8",
-              "on-background": "#1c1b1b",
-              "on-surface": "#1c1b1b",
-              "surface-tint": "#2a6b2c",
-              "surface-container-highest": "#e5e2e1",
-              "outline-variant": "#c0c9bb",
-              "surface-variant": "#e5e2e1",
-              "on-primary-fixed-variant": "#0c5216",
-              tertiary: "#6c2200",
-              "on-tertiary-fixed-variant": "#802a00",
-              "surface-container-high": "#eae7e7",
-              "secondary-fixed-dim": "#88d982",
-              "surface-container-lowest": "#ffffff",
-              "tertiary-fixed-dim": "#ffb59a",
-              outline: "#717a6d",
-              "on-primary": "#ffffff",
-              "on-surface-variant": "#41493e",
-              background: "#fcf9f8",
-              surface: "#fcf9f8",
-              "tertiary-container": "#933100",
-              "on-error-container": "#93000a",
-              "on-tertiary-fixed": "#380d00",
-              "primary-container": "#1b5e20",
-              "surface-container": "#f0eded",
-              "on-tertiary-container": "#ffb498",
-              "on-secondary": "#ffffff",
-              "primary-fixed-dim": "#91d78a",
-              "inverse-primary": "#91d78a",
-              "on-primary-container": "#90d689",
-              "on-secondary-fixed": "#002204",
-              secondary: "#1b6d24",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              base: "8px",
-              "stack-md": "24px",
-              "margin-mobile": "16px",
-              "container-max": "1200px",
-              "stack-lg": "48px",
-              "margin-desktop": "40px",
-              "stack-sm": "12px",
-              gutter: "24px",
-            },
-            fontFamily: {
-              "label-md": ["DM Sans"],
-              "headline-lg": ["Playfair Display"],
-              "headline-xl": ["Playfair Display"],
-              "accent-text": ["DM Sans"],
-              "headline-md": ["Playfair Display"],
-              "body-lg": ["DM Sans"],
-              "headline-lg-mobile": ["Playfair Display"],
-              "body-md": ["DM Sans"],
-            },
-            fontSize: {
-              "label-md": [
-                "14px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.05em",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "700" }],
-              "headline-xl": [
-                "48px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "accent-text": ["16px", { lineHeight: "1.5", fontWeight: "500" }],
-              "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
-              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-              "headline-lg-mobile": [
-                "28px",
-                { lineHeight: "1.3", fontWeight: "700" },
-              ],
-              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="notre-processus.css" />
   </head>
-  <body
-    class="text-on-background bg-background antialiased selection:bg-primary-container selection:text-on-primary-container"
-  >
-    <!-- TopNavBar -->
-    <nav
-      class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md bg-surface dark:bg-surface-dim shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
-    >
-      <div
-       class="max-w-[1200px] mx-auto px-margin-desktop py-4 flex justify-between items-center">
-        <a
-          class="flex items-center gap-2 hover:bg-surface-container-low dark:hover:bg-surface-container-high transition-all"
-          href="#"
-        >
-          <img
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="page-progress" id="page-progress"></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../index.html"
+          ><img
             src="../../assets/images/logo/logo.png"
-            alt="GOTAM'S - Produire sain, Nourrir mieux"
-            class="h-14 w-auto"
-          />
-        </a>
-        <div class="hidden md:flex items-center gap-8">
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md"
-            href="../../index.html"
-            >Accueil</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md"
-            href="../nos-produits/nos-produits.html"
-            >Produits</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md"
-            href="../notre-histoire/notre-histoire.html"
-            >Notre Histoire</a
-          >
-          <a
-            class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-md text-label-md"
-            href="../notre-processus/notre-processus.html"
+            alt="GOTAM'S — Produire sain, Nourrir mieux."
+        /></a>
+        <nav class="nav-desktop" aria-label="Navigation principale">
+          <a href="../../index.html">Accueil</a>
+          <a href="../nos-produits/nos-produits.html">Produits</a>
+          <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+          <a class="is-active" href="../notre-processus/notre-processus.html"
             >Notre Processus</a
           >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md"
-            href="../agro-premium-organic/agro-premium-organic.html"
-            >Agro-Premium Organic</a
-          >
-          <a
-            class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-md text-label-md"
-            href="../satisfaction/satisfaction.html"
-            >Satisfaction</a
-          >
-        </div>
-        <div class="hidden md:flex items-center gap-4"></div>
-          <button
-            class="bg-[#E65100] text-white rounded-full px-6 py-2 font-label-md text-label-md flex items-center gap-2 hover:opacity-90 transition-opacity"
-          >
-            Commander maintenant
-            <span
-              class="material-symbols-outlined"
-              style="font-variation-settings: &quot;FILL&quot; 1"
-              >eco</span
-            >
-          </button>
-        </div>
-        <button class="md:hidden text-primary p-2" id="mobileMenuBtn">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-<div class="hidden md:hidden flex-col gap-2 px-margin-mobile pb-4" id="mobileMenu">
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../../index.html">Accueil</a>
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../nos-produits/nos-produits.html">Produits</a>
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../notre-processus/notre-processus.html">Notre Processus</a>
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../agro-premium-organic/agro-premium-organic.html">Agro-Premium Organic</a>
-<a class="font-label-md text-label-md text-on-surface-variant py-2" href="../satisfaction/satisfaction.html">Satisfaction</a>
-</div>
+          <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+        </nav>
+        <a class="btn btn-accent" href="../commander/commander.html"
+          >Commander</a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </nav>
-    <!-- Main Content -->
-    <main class="pt-32 pb-stack-lg">
-      <!-- Hero Section -->
-      <section
-        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg"
+    </header>
+    <nav class="nav-mobile" aria-label="Navigation mobile">
+      <a href="../../index.html">Accueil</a>
+      <a href="../nos-produits/nos-produits.html">Produits</a>
+      <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+      <a class="is-active" href="../notre-processus/notre-processus.html"
+        >Notre Processus</a
       >
-        <div class="leaf-edge mb-8">
-          <h1
-            class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-4"
-          >
-            Notre Processus de Production
-          </h1>
-          <p
-            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl"
-          >
-            De la graine de soja à votre table.
+      <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+      <a class="btn btn-accent" href="../commander/commander.html"
+        >Commander maintenant</a
+      >
+    </nav>
+
+    <main id="contenu">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Fabrication</p>
+          <h1>De la graine de soja à votre table</h1>
+          <p class="lead">
+            Huit étapes telles que décrites sur le site existant. Faites défiler
+            : chaque carte se révèle au fil du parcours.
           </p>
         </div>
-        <div
-          class="w-full h-64 md:h-96 rounded-xl overflow-hidden premium-shadow relative"
-          data-alt="A macro shot of fresh soybeans in hands of a farmer, soft sunlight illuminating the organic textures, lush green fields in the background, conveying a high-end, premium agricultural startup aesthetic with natural colors and warm light."
-          style="
-            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBTDyyuO60JBK6kyxdZ4Vg1tQSSTKxQdGEjTJs8WSxeMVkmf82C7TaQ3l8aTHGrhEW6hyj-ZDvPG_f2jj3diBRgY01iuIYvONJGWfgf2CDSkXdm9MKao5VH_bL881kJrJvBdQCHv1_KSqHy8J2-jDNDod41rjW6uhPucwdtWtt6sye_IMyLmG3ctUTq8B2FTobaHJJQcRsSHE7G97iriqkWN5QEeGPB1vhxezwXn-LiVF3OL9qc_zl0&quot;);
-          "
-        >
-          <div class="absolute inset-0 bg-black/20"></div>
+      </section>
+
+      <section class="section">
+        <div class="container process-track">
+          <article class="process-step reveal">
+            <div class="num">01</div>
+            <h3>Réception</h3>
+            <p>Sélection des graines à la ferme.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">02</div>
+            <h3>Trempage</h3>
+            <p>Hydratation contrôlée pour réveiller les nutriments.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">03</div>
+            <h3>Broyage</h3>
+            <p>Extraction du lait végétal.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">04</div>
+            <h3>Cuisson</h3>
+            <p>Pasteurisation douce pour la sécurité.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">05</div>
+            <h3>Fermentation</h3>
+            <p>Maturation avec cultures actives, pour le yaourt.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">06</div>
+            <h3>Conditionnement</h3>
+            <p>Mise en pot soignée.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">07</div>
+            <h3>Stockage</h3>
+            <p>Conservation au froid.</p>
+          </article>
+          <article class="process-step reveal">
+            <div class="num">08</div>
+            <h3>Livraison</h3>
+            <p>Distribution, avec attention à la chaîne de froid.</p>
+          </article>
         </div>
       </section>
-      <!-- 8-Step Grid Section -->
-      <section
-        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg"
-      >
-        <h2 class="font-headline-md text-headline-md text-primary mb-stack-md">
-          Les Étapes Clés
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-          <!-- Step 1 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >inventory</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                1
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Réception
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Sélection rigoureuse des graines à la ferme.
+
+      <section class="section" style="background: #f6eedc">
+        <div class="container split">
+          <div class="reveal">
+            <h2>Nos terroirs</h2>
+            <p>
+              Selon le site existant, les matières premières proviennent de
+              régions fertiles : Adamaoua, Nord, Ouest, Méfou-et-Afamba.
             </p>
           </div>
-          <!-- Step 2 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >water_drop</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                2
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Trempage
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Hydratation contrôlée pour réveiller les nutriments.
+          <div class="reveal">
+            <h2>Qualité &amp; sécurité</h2>
+            <p>
+              L’ancienne version du site mentionnait HACCP, MINSANTE (en cours)
+              et Centre Pasteur. Ces éléments sont conservés ici comme pistes à
+              vérifier, sans les présenter comme des labels obtenus.
             </p>
-          </div>
-          <!-- Step 3 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >settings_suggest</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                3
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Broyage
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Extraction à froid du lait végétal pur.
-            </p>
-          </div>
-          <!-- Step 4 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >local_fire_department</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                4
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Cuisson
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Pasteurisation douce pour garantir la sécurité.
-            </p>
-          </div>
-          <!-- Step 5 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >science</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                5
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Fermentation
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Maturation lente avec cultures actives.
-            </p>
-          </div>
-          <!-- Step 6 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >package</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                6
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Conditionnement
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Mise en pot stérile et écologique.
-            </p>
-          </div>
-          <!-- Step 7 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >kitchen</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                7
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Stockage
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Conservation en chambre froide optimale.
-            </p>
-          </div>
-          <!-- Step 8 -->
-          <div
-            class="bg-surface-container-lowest rounded-xl p-6 premium-shadow transition-all relative overflow-hidden group"
-          >
-            <div
-              class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity"
-            >
-              <span
-                class="material-symbols-outlined text-6xl text-primary-container"
-                >local_shipping</span
-              >
-            </div>
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-10 h-10 rounded-full bg-light-green flex items-center justify-center text-primary-container font-headline-md text-headline-md"
-              >
-                8
-              </div>
-              <h3 class="font-accent-text text-accent-text text-primary">
-                Livraison
-              </h3>
-            </div>
-            <p class="font-body-md text-body-md text-on-surface-variant">
-              Distribution rapide via chaîne de froid.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- Certifications & Sourcing Section (Bento Layout) -->
-      <section
-        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-stack-lg"
-      >
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
-          <!-- Certifications -->
-          <div
-            class="bg-light-green rounded-xl p-8 premium-shadow flex flex-col justify-between"
-          >
-            <div>
-              <h2 class="font-headline-md text-headline-md text-primary mb-6">
-                Qualité &amp; Sécurité
-              </h2>
-              <ul
-                class="space-y-4 font-body-md text-body-md text-on-surface-variant"
-              >
-                <li class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary-container"
-                    >eco</span
-                  >
-                  HACCP
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary-container"
-                    >eco</span
-                  >
-                  MINSANTE (en cours)
-                </li>
-                <li class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary-container"
-                    >eco</span
-                  >
-                  Centre Pasteur
-                </li>
-              </ul>
-            </div>
-            <div class="mt-8 pt-6 border-t border-primary/10">
-              <p class="font-label-md text-label-md text-primary/70">
-                Engagement d'excellence pour chaque lot.
-              </p>
-            </div>
-          </div>
-          <!-- Sourcing Map -->
-          <div
-            class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-8 premium-shadow relative overflow-hidden"
-          >
-            <h2 class="font-headline-md text-headline-md text-primary mb-4">
-              Nos Terroirs
-            </h2>
-            <p
-              class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-lg"
-            >
-              Nos matières premières proviennent des régions les plus fertiles :
-              Adamaoua, Nord, Ouest, Mefou et Afamba.
-            </p>
-            <div
-              class="w-full h-64 rounded-lg bg-surface-container-low overflow-hidden relative"
-              data-alt="A stylized minimalist map of Cameroon, highlighted with subtle green glowing zones indicating fertile agricultural regions like Adamaoua and West. Premium, modern, light background with clean lines and soft shadows."
-              data-location="Cameroon"
-              style="
-                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA8K8yAosjo6B6pxupeIJv1K6zSMbj3zAFF2aBzWQeJ5oUzElGWzfWS9FZe8kEJAibF6QpG4LkIgM94eePvW0zz1VxsiYyBSYbBC-5VMVSSj4nrMM09_D5sNsl0G5_nZBJLrcNAhnq4S6N808frtTl34ayxacnOK-yyY2LV1OC98PlHzqxSt_R_Dt6KS8-GypoQSaNQ1vi7BWmSqx9Pgo1hjNGiv0dJdY9waPTbXGNv7l7O3_0LMCIx&quot;);
-              "
-            ></div>
+            <ul>
+              <li>HACCP — à confirmer</li>
+              <li>MINSANTE — indiqué « en cours »</li>
+              <li>Centre Pasteur — à confirmer</li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer
-      class="w-full pt-stack-lg pb-stack-md bg-surface-container-low dark:bg-surface-container-lowest bg-surface-container-low dark:bg-on-surface-variant/5"
-    >
-      <div
-        class="max-w-[1200px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter"
-      >
-        <div class="col-span-1 md:col-span-2">
-          <p
-            class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-4"
-          >
-            GOTAMS SARL
-          </p>
-          <p
-            class="font-body-md text-body-md text-on-surface-variant mb-4 max-w-sm"
-          >
-            © 2024 GOTAMS SARL. Excellence in Plant-Based Dairy.
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="../../assets/images/logo/logo.png" alt="GOTAM'S" />
+          <p>GOTAMS SARL<br />Yaoundé - Soa, Centre, Cameroun</p>
+          <p>
+            <a href="mailto:contact@gotams.org">contact@gotams.org</a><br /><a
+              href="https://wa.me/237699232344"
+              >699 232 344</a
+            >
           </p>
         </div>
-        <div class="col-span-1">
-          <ul class="space-y-2">
-            <li>
-              <a
-                class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
-                href="#"
-                >Produits</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
-                href="#"
-                >Notre Histoire</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-body-md text-body-md text-primary dark:text-primary-fixed underline hover:text-primary dark:hover:text-primary-fixed"
-                href="#"
-                >Notre Processus</a
-              >
-            </li>
-          </ul>
+        <div>
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="../../index.html">Accueil</a>
+            <a href="../nos-produits/nos-produits.html">Produits</a>
+            <a href="../notre-histoire/notre-histoire.html">Notre Histoire</a>
+            <a href="../notre-processus/notre-processus.html"
+              >Notre Processus</a
+            >
+            <a href="../satisfaction/satisfaction.html">Satisfaction</a>
+            <a href="../commander/commander.html">Commander</a>
+          </div>
         </div>
-        <div class="col-span-1">
-          <ul class="space-y-2">
-            <li>
-              <a
-                class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
-                href="#"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <span class="font-body-md text-body-md text-on-surface-variant"
-                >Soa, Cameroon</span
-              >
-            </li>
-            <li>
-              <a
-                class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary transition-colors hover:text-primary dark:hover:text-primary-fixed"
-                href="#"
-                >WhatsApp Support</a
-              >
-            </li>
-          </ul>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="https://wa.me/237699232344">WhatsApp 699 232 344</a></p>
         </div>
       </div>
+      <div class="container footer-bottom">
+        GOTAMS SARL · Yaoundé - Soa, Centre, Cameroun
+      </div>
     </footer>
-    <!-- SideNavBar (FAB for WhatsApp) -->
     <a
-      aria-label="WhatsApp Support"
-      class="fixed bottom-8 right-8 z-50 flex items-center justify-center rounded-full fixed bottom-base right-base rounded-full p-4 w-16 h-16 shadow-[0_8px_32px_rgba(0,0,0,0.12)] shadow-xl bg-tertiary-container dark:bg-tertiary text-on-tertiary-container dark:text-on-tertiary hover:scale-110 transition-transform duration-300 group"
-      href="#"
+      class="wa-fab"
+      href="https://wa.me/237699232344"
+      aria-label="Écrire sur WhatsApp"
+      >WA</a
     >
-      <span
-        class="material-symbols-outlined text-2xl group-active:scale-90 duration-150 transition-transform"
-        >chat</span
-      >
-      <!-- Visually hidden label -->
-      <span class="sr-only">WhatsApp Support</span>
-    </a>
+    <div class="toast" id="toast" role="status"></div>
     <script src="../../assets/js/global.js"></script>
+    <script src="notre-processus.js"></script>
   </body>
 </html>
