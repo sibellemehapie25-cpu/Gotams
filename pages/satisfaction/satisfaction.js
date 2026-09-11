@@ -24,7 +24,7 @@
 
   /* Replace this function later with POST /api/surveys/households or /merchants */
   var SHEET_URL =
-    "https://script.google.com/macros/s/AKfycbwMHMS0ulCJDCka-c34aC5mXcqIp9haDGd6u035BxFMJyyXB9wmOxZVBUZzajiPSwRh3w/exec";
+    "https://script.google.com/macros/s/AKfycbx1vLZD8jgXMYLV29o4JBMB8jgZagSdjtQCSIRGLlky93DPHu2i8fAXQBVJO3RXPcEZ/exec";
 
   function persistSurvey(payload) {
     // Sauvegarde locale (comme avant, en secours)
