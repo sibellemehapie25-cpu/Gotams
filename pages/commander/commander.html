@@ -73,15 +73,16 @@
             <h2>Produits</h2>
             <form
               class="card"
-              style="padding: 1.2rem; margin-bottom: 1rem"
+              style="padding: 1.2rem"
               data-add-product="boisson"
             >
-              <h3>Lait &amp; Yaourt de soja</h3>
+              <h3>Nos produits</h3>
               <div class="field">
                 <label for="boisson-produit">Produit</label>
                 <select class="select" id="boisson-produit" name="produit">
                   <option value="lait">Lait de soja</option>
                   <option value="yaourt">Yaourt de soja</option>
+                  <option value="okara">Okara</option>
                 </select>
               </div>
               <p class="price" id="boisson-price">500 – 1000 FCFA</p>
@@ -100,29 +101,6 @@
                 <input
                   class="input"
                   id="boisson-qty"
-                  name="qty"
-                  type="number"
-                  min="1"
-                  value="1"
-                />
-              </div>
-              <button class="btn btn-primary" type="submit">Ajouter</button>
-            </form>
-            <form class="card" style="padding: 1.2rem" data-add-product="okara">
-              <h3>Okara</h3>
-              <p class="price">100 – 250 FCFA / kg</p>
-              <input type="hidden" name="flavor" value="Alimentation animale" />
-              <div class="field">
-                <label for="okara-format">Format</label>
-                <select class="select" id="okara-format" name="format">
-                  <option>1 kg</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="okara-qty">Quantité</label>
-                <input
-                  class="input"
-                  id="okara-qty"
                   name="qty"
                   type="number"
                   min="1"

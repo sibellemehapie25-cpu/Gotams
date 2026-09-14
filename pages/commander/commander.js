@@ -2,7 +2,7 @@
   var KEY = "gotams.cart.v1";
   var WHATSAPP = "237699232344";
   var SHEET_URL =
-    https://script.google.com/macros/s/AKfycbxBlPMkL66tCaHAuaMWcjIUp5GAoRZ1cjK_ghUJxAZpW2uX520aHIy7S6FGU4phEE25/exec
+    "https://script.google.com/macros/s/AKfycbx1vLZD8jgXMYLV29o4JBMB8jgZagSdjtQCSIRGLlky93DPHu2i8fAXQBVJO3RXPcEZ/exec";
 
   function uid() {
     return (
@@ -131,11 +131,17 @@
       .join("");
     var priceEl = document.getElementById("boisson-price");
     if (priceEl) {
-      priceEl.textContent = id === "lait" ? "500 – 1000 FCFA" : "300 – 600 FCFA";
+      var prices = {
+        lait: "500 – 1000 FCFA",
+        yaourt: "300 – 600 FCFA",
+        okara: "100 – 250 FCFA / kg"
+      };
+      priceEl.textContent = prices[id] || product.priceHint;
     }
     var flavorLabel = document.getElementById("boisson-flavor-label");
     if (flavorLabel) {
-      flavorLabel.textContent = id === "lait" ? "Saveur" : "Parfum";
+      var labels = { lait: "Saveur", yaourt: "Parfum", okara: "Usage" };
+      flavorLabel.textContent = labels[id] || "Saveur";
     }
   }
 
