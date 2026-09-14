@@ -2,7 +2,7 @@
   var KEY = "gotams.cart.v1";
   var WHATSAPP = "237699232344";
   var SHEET_URL =
-    "https://script.google.com/macros/s/AKfycbx1vLZD8jgXMYLV29o4JBMB8jgZagSdjtQCSIRGLlky93DPHu2i8fAXQBVJO3RXPcEZ/exec";
+    https://script.google.com/macros/s/AKfycbxBlPMkL66tCaHAuaMWcjIUp5GAoRZ1cjK_ghUJxAZpW2uX520aHIy7S6FGU4phEE25/exec
 
   function uid() {
     return (

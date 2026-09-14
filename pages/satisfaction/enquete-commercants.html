@@ -744,6 +744,31 @@
                   name="deg_yaourt_remarque"
                 ></textarea>
               </div>
+              <fieldset class="field">
+                <legend class="label">
+                  Seriez-vous d’accord pour une séance de dégustation du lait
+                  et yaourt de soja dans votre structure ?
+                  <span class="req">*</span>
+                </legend>
+                <div class="choice-grid cols-2">
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="accord_degustation"
+                      value="Oui"
+                      data-required="true"
+                    /><span>Oui</span></label
+                  >
+                  <label class="choice"
+                    ><input
+                      type="radio"
+                      name="accord_degustation"
+                      value="Non"
+                    /><span>Non</span></label
+                  >
+                </div>
+                <p class="error-msg">Merci de répondre à cette question.</p>
+              </fieldset>
             </section>
 
             <section class="step-panel is-hidden" data-letter-step>
