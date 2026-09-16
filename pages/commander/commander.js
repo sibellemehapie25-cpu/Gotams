@@ -31,7 +31,7 @@
     okara: {
       id: "okara",
       name: "Okara",
-      flavors: ["Alimentation animale"],
+      flavors: ["Standard"],
       formats: ["1 kg"],
       priceHint: "100 - 250 FCFA / kg (fourchette indiquée sur le site existant)"
     }
