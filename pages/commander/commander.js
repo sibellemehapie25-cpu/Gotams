@@ -143,6 +143,16 @@
       var labels = { lait: "Saveur", yaourt: "Parfum", okara: "Usage" };
       flavorLabel.textContent = labels[id] || "Saveur";
     }
+    var qtyField = document.getElementById("boisson-qty-field");
+    var qtyInput = document.getElementById("boisson-qty");
+    if (qtyField) {
+      if (id === "okara") {
+        qtyField.style.display = "none";
+        if (qtyInput) qtyInput.value = 1;
+      } else {
+        qtyField.style.display = "";
+      }
+    }
   }
 
   document.addEventListener("DOMContentLoaded", function () {
