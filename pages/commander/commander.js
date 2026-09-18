@@ -179,6 +179,14 @@
           qty: Number(form.qty.value || 1),
           priceHint: product.priceHint
         });
+        // Le formulaire redevient vide / par défaut après l'ajout
+        if (form.produit) {
+          form.produit.selectedIndex = 0;
+          populateBoisson();
+        } else {
+          form.reset();
+        }
+        if (form.qty) form.qty.value = 1;
       });
     });
 
